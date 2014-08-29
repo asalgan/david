@@ -12,5 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require summernote.min
 //= require bootstrap-sprockets
 //= require_tree .
+
+$(document).ready(function() { 
+
+  $('.summernote').summernote();
+  var sHTML = $('.summernote').code();
+  $('.summernote').code(sHTML);
+
+});

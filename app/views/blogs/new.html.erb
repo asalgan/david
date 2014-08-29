@@ -1,0 +1,9 @@
+<section class="edit-blog">
+  <div class="container">
+  	<%= form_for @blog_post do |f| %>
+	  	<div>
+	    	<%= f.text_area :content, id:'blog_content' %>
+	  	</div>
+    <% end %>
+  </div>
+</section>

@@ -8,9 +8,8 @@ Rails.application.routes.draw do
   	get "/admin" => "devise/sessions#new"
 	end
 
-	resources :blog
+	resources :blogs
 
 	get "/about" => "pages#about", :as => :about
-	get "/admin" => "blog#new"
 	
 end
