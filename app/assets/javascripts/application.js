@@ -18,8 +18,14 @@
 
 $(document).ready(function() { 
 
+  $('.prettySocial').prettySocial();
+
   $('.summernote').summernote();
   var sHTML = $('.summernote').code();
   $('.summernote').code(sHTML);
+
+  var postForm = function() {
+    $('textarea[name="content"]').html($('#summernote').code());
+ };
 
 });

@@ -9,14 +9,14 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
-gem 'bootstrap-sass'
 gem 'devise'
 gem 'figaro', '>= 1.0.0.rc1'
 gem 'high_voltage'
 gem 'sendgrid'
 gem 'simple_form'
-gem 'summernote-rails'
+gem 'bootstrap-sass'
 gem 'font-awesome-rails'
+gem 'summernote-rails'
 
 group :development do
   gem 'hub', :require=>nil

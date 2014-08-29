@@ -1,6 +1,8 @@
 <section class="blog-top">
   <div class="container">
-    hi
+    <% @blog_posts.each do |blog_post| %>
+    	<%= blog_post.content %>
+    <% end %>
     <% if user_signed_in? && current_user.admin? %>
       <li><%= link_to 'Create blog post', new_blog_path %></li>
     <% end %>
