@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require summernote.min
+//= require froala_editor.min.js
 //= require bootstrap-sprockets
 //= require_tree .
 
@@ -20,12 +20,11 @@ $(document).ready(function() {
 
   $('.prettySocial').prettySocial();
 
-  $('.summernote').summernote();
-  var sHTML = $('.summernote').code();
-  $('.summernote').code(sHTML);
+  $('.blog-post').editable({
+  	inlineMode: false,
+  	imageResize: true,
+  	autosave: true
+  })
 
-  var postForm = function() {
-    $('textarea[name="content"]').html($('#summernote').code());
- };
 
 });

@@ -1,12 +1,14 @@
 <section class="edit-blog">
+
   <div class="container">
     <%= form_for @blog_post do |f| %>
       <div>
-        <%= f.text_area :content, :class =>'summernote' %>
+        <%= f.text_area :content, :class =>'blog-post' %>
       </div>
       <div>
         <%= f.submit 'Create blog post' %>
       </div>
     <% end %>
   </div>
+
 </section>

@@ -14,6 +14,10 @@ li {
   list-style: none;
 }
 
+p {
+  margin-bottom: 0px;
+}
+
 // make all images responsive by default
 img {
   @extend .img-responsive;
@@ -144,5 +148,7 @@ section {
     color: $green;
   }
 }
+
+
 
 

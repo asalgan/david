@@ -15,8 +15,8 @@ gem 'high_voltage'
 gem 'sendgrid'
 gem 'simple_form'
 gem 'bootstrap-sass'
-gem 'font-awesome-rails'
-gem 'summernote-rails'
+gem 'font-awesome-rails', '4.0.3.1'
+gem 'wysiwyg-rails'
 
 group :development do
   gem 'hub', :require=>nil
