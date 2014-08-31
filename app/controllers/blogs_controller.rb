@@ -9,6 +9,19 @@ class BlogsController < ApplicationController
     @blog_post = Blog.new
   end
 
+  def edit
+    @blog_post = Blog.find(params[:id])
+  end
+
+  def update
+    @blog_post = Blog.find(params[:id])
+    @blog_post.update(blog_params)
+
+    if @blog_post.save
+      redirect_to blogs_url, notice: "Your edits were successfully saved!" 
+    end
+  end
+
   def create
     @blog_post = Blog.new(blog_params)
 

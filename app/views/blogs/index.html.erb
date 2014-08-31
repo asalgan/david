@@ -1,12 +1,22 @@
 <section class="blog-top">
 
   <div class="container">
+  	<div>
     <% @blog_posts.each do |blog_post| %>
-    	<%= blog_post.content.html_safe %>
-    <% end %>
-    <% if user_signed_in? && current_user.admin? %>
-      <li><%= link_to 'Create blog post', new_blog_path %></li>
-    <% end %>
+    	<div class="blog-article">
+	    	<h2><%= blog_post.title %></h2>
+	    	<p><%= blog_post.content.html_safe %></p>
+	    	<% if user_signed_in? && current_user.admin? %>
+	    		<li><%= link_to 'Edit blog post', edit_blog_path(:id => blog_post.id) %></li>
+	    	<% end %>
+	    </div>
+	  <% end %>
+	</div>
+		<div>
+	    <% if user_signed_in? && current_user.admin? %>
+	      <li><%= link_to 'Create blog post', new_blog_path %></li>
+	    <% end %>
+    </div>
   </div>
 
 </section>

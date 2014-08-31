@@ -23,8 +23,9 @@ $(document).ready(function() {
   $('.blog-post').editable({
   	inlineMode: false,
   	imageResize: true,
-  	autosave: true
+  	autosave: true, 
+  	height: 300, 
+  	placeholder: "Your blog post", 
   })
-
 
 });

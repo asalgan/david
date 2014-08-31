@@ -3,13 +3,13 @@
   <div class="container">
     <%= form_for @blog_post do |f| %>
       <div>
-        <%= f.text_field :title, placeholder: "Blog post title" %>
+        <%= f.text_field :title %>
       </div>
       <div>
         <%= f.text_area :content, :class =>'blog-post' %>
       </div>
       <div>
-        <%= f.submit 'Create blog post' %>
+        <%= f.submit 'Save changes' %>
       </div>
     <% end %>
   </div>

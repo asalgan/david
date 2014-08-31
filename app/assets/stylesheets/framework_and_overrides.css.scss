@@ -132,6 +132,15 @@ section {
   transition: all 0.2s ease;
 }
 
+%form-fields {
+  width: 50%;
+  border-radius: 3px;
+  border: 1px solid #C0C0C0;
+  padding: 8px 6px 6px 6px;
+  line-height: 17px;
+  margin: 0 0 16px 0;
+}
+
 #user_remember_me {
   margin-left: 0px;
 }
@@ -149,6 +158,13 @@ section {
   }
 }
 
+#blog_title {
+  @extend %form-fields;
+  height: 32px;
+}
 
+.blog-article {
+  margin-bottom: 100px;
+}
 
 
