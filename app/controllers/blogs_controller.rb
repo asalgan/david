@@ -2,7 +2,7 @@ class BlogsController < ApplicationController
   before_filter :is_admin?, only: [:new, :create, :destroy]
 
   def index
-    @blog_posts = Blog.all
+    @blog_posts = Blog.all.paginate(:page => params[:page], :per_page => 6)
   end
 
   def new

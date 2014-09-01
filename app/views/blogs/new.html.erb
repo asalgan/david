@@ -6,10 +6,10 @@
         <%= f.text_field :title, placeholder: "Blog post title" %>
       </div>
       <div>
-        <%= f.text_area :content, :class =>'blog-post' %>
+        <%= f.text_area :content, :class =>"blog-post" %>
       </div>
       <div>
-        <%= f.submit 'Create blog post' %>
+        <%= f.submit 'Create blog post', :class => "create-blog-post-button" %>
       </div>
     <% end %>
   </div>
