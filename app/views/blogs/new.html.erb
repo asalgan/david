@@ -1,12 +1,15 @@
-<section class="edit-blog">
+<section class="new-blog">
 
   <div class="container">
+    <h1 class="header">New Blog Post</h1>
     <%= form_for @blog_post do |f| %>
       <div>
+        <h3>Blog post title</h3>
         <%= f.text_field :title, placeholder: "Blog post title" %>
       </div>
       <div>
-        <%= f.text_area :content, :class =>"blog-post" %>
+        <h3>Blog post content</h3>
+        <%= f.text_area :content, :class =>"redactor" %>
       </div>
       <div>
         <%= f.submit 'Create blog post', :class => "create-blog-post-button" %>

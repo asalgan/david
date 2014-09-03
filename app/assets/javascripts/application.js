@@ -12,20 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require froala_editor.min.js
+//= require redactor-rails
+//= require redactor-rails/plugins
 //= require bootstrap-sprockets
 //= require_tree .
 
 $(document).ready(function() { 
 
   $('.prettySocial').prettySocial();
-
-  $('.blog-post').editable({
-  	inlineMode: false,
-  	imageResize: true,
-  	autosave: true, 
-  	height: 300, 
-  	placeholder: "Your blog post", 
-  })
 
 });

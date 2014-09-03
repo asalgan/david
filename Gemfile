@@ -16,8 +16,11 @@ gem 'sendgrid'
 gem 'simple_form'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails', '4.0.3.1'
-gem 'wysiwyg-rails'
 gem 'will_paginate-bootstrap'
+gem 'redactor-rails'
+gem "carrierwave"
+gem "mini_magick"
+gem "mail_form", ">= 1.3.0"
 
 group :development do
   gem 'hub', :require=>nil
