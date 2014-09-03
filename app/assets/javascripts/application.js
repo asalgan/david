@@ -21,4 +21,9 @@ $(document).ready(function() {
 
   $('.prettySocial').prettySocial();
 
+  $('.contact-submit').click(function () {
+    var $this = $(this);
+    $this.button('loading');
+  });
+
 });
