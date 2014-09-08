@@ -32,7 +32,7 @@ img {
 
 .navbar {
   text-transform: uppercase;
-  border-bottom: 0px;
+  border-bottom: 5px solid $green;
 
   .navbar-collapse ul li a {
     color: white;
@@ -146,7 +146,7 @@ section {
   width: 50%;
   border-radius: 3px;
   border: 1px solid #C0C0C0;
-  padding: 8px 6px 6px 6px;
+  padding: 4px;
   line-height: 17px;
   margin: 0 0 16px 0;
 }
@@ -344,47 +344,65 @@ footer {
   }
 }
 
-#new_contact {
-  label {
-    vertical-align: top;
-    margin-top: 10px;
-  }
-  
-  #contact_name, #contact_email {
-    @extend %form-fields;
-    height: 38px;
-    width: 100%;
-    font-weight: 400;
-    font-size: 16px;
-    color: #515357;
-    padding-left: 5px;
-    margin-top: 10px;
-  }
+.contact {
+  margin-top: 50px;
 
-  #contact_message {
-    @extend %form-fields;
-    width: 100%;
-    font-weight: 400;
-    font-size: 16px;
-    color: #515357;
-    padding-left: 5px;
-    margin-top: 10px;
-    height: 80px;
-  }
-
-  .contact-submit {
-    height: 40px;
-    width: 130px;
-    background-color: $green;
-    border: none;
+  .contact-form-header {
+    font-size: 32px;
+    line-height: 37px;
     font-family: 'Noto Sans', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    @extend %transition;
     font-weight: 600;
-    border-radius: 3px;
+    color: #3b3b3b;
+    text-transform: uppercase;
+    margin: 0px;
+    letter-spacing: -1px;
+    -webkit-font-smoothing: antialiased;
+  }
 
-    &:hover {
-      background-color: darken($green, 10%)
+  #new_contact {
+    label {
+      vertical-align: top;
+      margin-top: 10px;
+      color: #626262;
+    }
+    
+    #contact_name, #contact_email {
+      @extend %form-fields;
+      height: 38px;
+      width: 100%;
+      font-weight: 400;
+      font-size: 16px;
+      color: #515357;
+      padding-left: 5px;
+      margin-top: 3px;
+      margin-bottom: 2px;
+    }
+
+    #contact_message {
+      @extend %form-fields;
+      width: 100%;
+      font-weight: 400;
+      font-size: 16px;
+      color: #515357;
+      padding-left: 5px;
+      margin-top: 10px;
+      height: 80px;
+    }
+
+    .contact-submit {
+      height: 40px;
+      width: 130px;
+      background-color: $green;
+      border: none;
+      font-family: 'Noto Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      @extend %transition;
+      font-weight: 600;
+      border-radius: 3px;
+
+      &:hover {
+        background-color: darken($green, 10%)
+      }
     }
   }
 }
