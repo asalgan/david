@@ -112,11 +112,17 @@ section {
   -webkit-font-smoothing: antialiased;
   @extend .well-lg;
   padding-bottom: 40px;
-  border-radius: 0px;
-  background: rgba(54, 25, 25, .7);
+  -webkit-box-shadow: 0 2px 3px rgba(56,67,67,0.2);
+  -moz-box-shadow: 0 2px 3px rgba(56,67,67,0.2);
+  box-shadow: 0 2px 3px rgba(56,67,67,0.2);
+  background: white;
+  border: 1px solid #dfdfdf;
+  border-top: 4px solid $green;
+  border-radius: 4px;
+  z-index: 100;
+  margin-bottom: 30px;
 
   h3, label, p, a {
-    color: white;
     text-align: center;
   }
 }
@@ -405,5 +411,21 @@ footer {
         background-color: darken($green, 10%)
       }
     }
+  }
+}
+
+.about-page-top {
+  margin-top: 50px;
+
+  .about-page-header {
+    font-size: 32px;
+    line-height: 37px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    color: #3b3b3b;
+    text-transform: uppercase;
+    margin: 0px;
+    letter-spacing: -1px;
+    -webkit-font-smoothing: antialiased;
   }
 }
