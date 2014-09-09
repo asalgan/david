@@ -7,7 +7,6 @@
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700|Lato:300,400,700' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-540e8a272e5d8ff1"></script>
     <%= csrf_meta_tags %>
   </head>
   <body>
@@ -15,8 +14,9 @@
       <%= render 'layouts/navigation' %>
     </header>
     <main role="main">
-       <%= render 'layouts/messages' %>
-       <%= yield %>
+
+      <%= render 'layouts/messages' %>
+      <%= yield %>
     </main>
     <footer>
       <%= render 'layouts/footer' %>
