@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require redactor-rails
 //= require redactor-rails/plugins
+//= require social-share-button
 //= require bootstrap-sprockets
 //= require_tree .
 

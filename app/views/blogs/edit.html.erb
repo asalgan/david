@@ -1,11 +1,14 @@
 <section class="edit-blog">
 
   <div class="container">
+    <h1 class="header">Edit Blog Post</h1>
     <%= form_for @blog_post do |f| %>
       <div>
+        <h3>Blog post title</h3>
         <%= f.text_field :title, placeholder: "Blog post title" %>
       </div>
       <div>
+        <h3>Blog post content</h3>
         <%= f.text_area :content, :class =>"redactor" %>
       </div>
       <div>

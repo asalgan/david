@@ -21,6 +21,7 @@ gem 'redactor-rails'
 gem "carrierwave"
 gem "mini_magick"
 gem "mail_form", ">= 1.3.0"
+gem 'social-share-button', '~> 0.1.6'
 
 group :development do
   gem 'hub', :require=>nil

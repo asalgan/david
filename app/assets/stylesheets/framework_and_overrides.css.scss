@@ -267,8 +267,11 @@ section {
 
     .blog-date {
       margin-bottom: 10px;
-      font-style: italic;
       padding-left: 20px;
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: #a3a3a3;
+      font-weight: bold;
     }
 
     .edit-blog-post-button {
@@ -455,12 +458,14 @@ footer {
     margin-top: 40px;
     font-size: 14px;
     letter-spacing: 1px;
-    color: #ccc;
+    color: #a3a3a3;
     font-weight: bold;
   }
 
   .blog-post-title {
     margin-bottom: 40px;
+    display: inline-block;
+    margin-right: 10px;
   }
 
   .blog-post-content {
@@ -470,7 +475,12 @@ footer {
   .social-share {
     margin: 0px 15px;
     height: 132px;
+    padding: 20px;
     border-top: 3px solid $red;
     background-color: #f8f8f8;
+    .share-post {
+      padding-bottom:10px;
+      text-align: center;
+    }
   }
 }
