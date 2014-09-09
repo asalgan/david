@@ -188,7 +188,6 @@ section {
   background-image: url('/assets/lifting.jpg');
   height: 600px;
   margin-top: 0px;
-  background-attachment: fixed;
   background-position: 0 100%; 
   background-repeat: no-repeat;
 
@@ -447,5 +446,31 @@ footer {
     margin: 0px;
     letter-spacing: -1px;
     -webkit-font-smoothing: antialiased;
+  }
+}
+
+.individual-blog-post {
+
+  .blog-post-date {
+    margin-top: 40px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #ccc;
+    font-weight: bold;
+  }
+
+  .blog-post-title {
+    margin-bottom: 40px;
+  }
+
+  .blog-post-content {
+    margin-bottom: 20px;
+  }
+
+  .social-share {
+    margin: 0px 15px;
+    height: 132px;
+    border-top: 3px solid $red;
+    background-color: #f8f8f8;
   }
 }

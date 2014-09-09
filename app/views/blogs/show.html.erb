@@ -1,0 +1,8 @@
+<% content_for :title do %><%= @blog.title %><% end %>
+
+<div class="container individual-blog-post">
+	<p class="blog-post-date"><%= @blog.created_at.strftime("%B %m, %Y ") %></p>
+	<h1 class="blog-post-title"><%= @blog.title %></h1>
+	<div class="blog-post-content col-md-9"><%= @blog.content.html_safe %></div>
+	<div class="social-share col-md-2 col-md-offset-1"></div>
+</div>
