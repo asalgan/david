@@ -6,10 +6,7 @@
 	<% if user_signed_in? && current_user.admin? %>
 		<%= link_to 'Edit blog post', edit_blog_path(:id => params[:id]), :class => "edit-blog-post-button" %>
 	<% end %>
-	<div class="blog-post-content col-md-9"><%= @blog.content.html_safe %></div>
-	<div class="social-share col-md-2 col-md-offset-1">
-		<%#= social_share_button_tag("#{@blog.title}", :url => "http://mysite.com/foo") %>
-		<p class="share-post">Share this post</p>
-		<div class="addthis_sharing_toolbox"></div>
+	<div class="blog-post-content col-md-9">
+		<%= @blog.content.html_safe %>
 	</div>
 </div>
