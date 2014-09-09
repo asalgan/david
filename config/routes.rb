@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 	resources :contacts, only: [:new, :create]
 
 	get "/about" => "pages#about", :as => :about
+	get "/services" => "pages#services", :as => :services
 	
 	get '/robots.txt' => 'home#robots'
 	

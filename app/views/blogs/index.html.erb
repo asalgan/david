@@ -1,28 +1,33 @@
+<% content_for :title do %>Blog<% end %>
+
 <section class="blog-top">
   <h1 class="blog-header col-md-4 col-md-offset-4">Workout Blog</h1>
 </section>
 
 <section class="blog-main">
   <div class="container">
+
     <div>
       <% if user_signed_in? && current_user.admin? %>
         <%= link_to 'New blog post', new_blog_path, :class =>"new-blog-post-button" %>
       <% end %>
     </div>
+
     <div class="col-md-9 col-md-offset-1">
       <% @blog_posts.order("created_at DESC").each do |blog_post| %>
         <div class="blog-article">
           <h2 class="blog-post-title"><%= link_to "#{blog_post.title}", blog_path(:id => blog_post.id) %></h2>
           <p class="blog-date"><%= blog_post.created_at.strftime("%B %m, %Y ") %></p>
-          <%= blog_post.content.html_safe %>
-          <% if user_signed_in? && current_user.admin? %>
-            <%= link_to 'Edit blog post', edit_blog_path(:id => blog_post.id), :class => "edit-blog-post-button" %>
-          <% end %>
+          <%= blog_post.content.html_safe[0..400].html_safe %>...
+          <%# if user_signed_in? && current_user.admin? %>
+            <%#= link_to 'Edit blog post', edit_blog_path(:id => blog_post.id), :class => "edit-blog-post-button" %>
+          <%# end %>
         </div>
       <% end %>
     </div>
+
     <%= will_paginate @blog_posts, renderer: BootstrapPagination::Rails %>
 
   </div>
-
 </section>
+
