@@ -32,8 +32,11 @@ img {
 
 .navbar {
   text-transform: uppercase;
+  border: none;
   border-bottom: 5px solid $red;
   font-size: 20px;
+  border-radius: 0px;
+  margin-bottom: 0px;
 
   .navbar-collapse ul li a {
     color: black;
@@ -80,7 +83,6 @@ main {
   position: relative;
   min-height: 100%;
   height: auto !important;
-  margin-top: 83px; // accommodate navbar
 }
 
 section {
