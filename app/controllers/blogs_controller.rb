@@ -5,6 +5,10 @@ class BlogsController < ApplicationController
     @blog_posts = Blog.all.paginate(:page => params[:page], :per_page => 6)
   end
 
+  def show
+    @blog = Blog.find(params[:id])
+  end
+
   def new
     @blog_post = Blog.new
   end
