@@ -36,24 +36,22 @@ img {
   font-size: 20px;
 
   .navbar-collapse ul li a {
-    color: white;
+    color: black;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     @extend %transition;
+    padding-top: 29px;
+    padding-bottom: 29px;
 
     &:hover {
       background-color: $red;
+      color: white;
     }
   }
   .nav-logo {
     height: 70px;
     width: 70px;
     margin: 4px 0px;
-  }
-
-  .navbar-right ul li a {
-    padding-top: 29px;
-    padding-bottom: 29px;
   }
 }
 
@@ -82,7 +80,7 @@ main {
   position: relative;
   min-height: 100%;
   height: auto !important;
-  margin-top: 50px; // accommodate navbar
+  margin-top: 83px; // accommodate navbar
 }
 
 section {
