@@ -200,8 +200,9 @@ section {
       line-height: 46px;
       letter-spacing: -1px;
       color: $red;
-      margin-bottom: 30px;
+      margin-bottom: 5%;
       padding-right: 0px;
+      text-align: center;
     }
 
     .homepage-subheader {
@@ -209,6 +210,15 @@ section {
       line-height: 26px;
       letter-spacing: 1px;
       font-size: 18px;
+      text-align: center;
+    }
+  }
+
+  .start-now {
+    .start-now-button {
+      float: right;
+      margin-top: 5%;
+      @extend %green-button;
     }
   }
 }
