@@ -86,7 +86,6 @@ main {
 
 section {
   @extend .row;
-  margin-top: 20px;
 }
 
 .authform {
@@ -183,6 +182,19 @@ section {
   }
 }
 
+%header-text {
+  font-size: 46px;
+  text-align: center;
+  line-height: 37px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 100;
+  color: #3b3b3b;
+  text-transform: uppercase;
+  margin-top: 30px;
+  letter-spacing: -1px;
+  -webkit-font-smoothing: antialiased;
+}
+
 .homepage-main {
   background-image: url('/assets/lifting.jpg');
   min-height: 450px;
@@ -226,18 +238,54 @@ section {
 .homepage-second {
   min-height: 300px;
 
-  .homepage-second-header {
-    font-size: 46px;
-    text-align: center;
-    line-height: 37px;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 100;
-    color: #3b3b3b;
-    text-transform: uppercase;
-    margin-top: 30px;
-    letter-spacing: -1px;
-    -webkit-font-smoothing: antialiased;
+  .container {
+    margin-top: 40px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 50px;
   }
+
+  .homepage-second-header {
+    @extend %header-text;
+    margin-bottom: 30px
+  }
+
+  .about {
+
+    .about-content {
+      font-size: 18px;
+      line-height: 24px;
+      padding-top: 30px;
+    }
+  }
+
+  .david-img {
+    width: 100%;
+  }
+}
+
+.homepage-third {
+  min-height: 300px;
+  padding-top: 30px;
+
+  .homepage-third-header {
+    @extend %header-text;
+  }
+
+  iframe {
+    margin: 0 auto;
+    display: block;
+    padding-top: 30px;
+  }
+
+  h4 {
+    text-align: center;
+    color: #a6a6a6;
+    margin-top: 20px;
+  }
+}
+
+.homepage-fourth {
+  min-height: 300px;
 }
 
 .blog-top {
