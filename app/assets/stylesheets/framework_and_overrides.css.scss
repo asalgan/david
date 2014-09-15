@@ -275,7 +275,7 @@ section {
   background-image: url('/assets/congruent_outline.png');
 
   .container {
-    margin-top: 40px;
+    margin-top: 10px;
     border-bottom: 1px solid #eee;
     padding-bottom: 50px;
   }
@@ -315,6 +315,11 @@ section {
       color: white;
       font-size: 26px;
       font-weight: 400;
+    }
+
+    .fa, .fa-bicycle {
+      text-align: center;
+      color: white;
     }
 
     .training-content {
