@@ -244,6 +244,12 @@ section {
     padding-bottom: 50px;
   }
 
+  h4 {
+    text-align: center;
+    color: #a6a6a6;
+    margin-top: 20px;
+  }
+
   .homepage-second-header {
     @extend %header-text;
     margin-bottom: 30px
@@ -266,9 +272,17 @@ section {
 .homepage-third {
   min-height: 300px;
   padding-top: 30px;
+  background-image: url('/assets/congruent_outline.png');
+
+  .container {
+    margin-top: 40px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 50px;
+  }
 
   .homepage-third-header {
     @extend %header-text;
+    color: white;
   }
 
   iframe {
@@ -285,7 +299,36 @@ section {
 }
 
 .homepage-fourth {
-  min-height: 300px;
+  min-height: 400px;
+  background-image: url('/assets/congruent_outline.png');
+  padding-bottom: 40px;
+
+  .classes {
+    min-height: 200px;
+    margin-top: 5%;
+
+    h3 {
+      text-align: center;
+      font-family: 'Lato', sans-serif;
+      line-height: 1.3em;
+      letter-spacing: -1px;
+      color: white;
+      font-size: 26px;
+      font-weight: 400;
+    }
+
+    .training-content {
+      padding: 5px;
+      color: white;
+      text-align: center;
+      font-family: 'Lato', sans-serif;
+      line-height: 1.3em;
+      letter-spacing: 2px;
+      color: white;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
 }
 
 .blog-top {
