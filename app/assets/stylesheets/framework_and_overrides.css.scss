@@ -282,10 +282,20 @@ section {
     color: white;
   }
 
-  iframe {
-    margin: 0 auto;
-    display: block;
-    padding-top: 30px;
+  .video {
+    margin-top: 2%;
+    position: relative;
+    padding-top: 55px;
+    padding-bottom: 40%; /* 16:9 */
+    height: 0;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   .homepage-third-subheader {
