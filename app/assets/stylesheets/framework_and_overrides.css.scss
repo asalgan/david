@@ -240,7 +240,6 @@ section {
 
   .container {
     margin-top: 40px;
-    border-bottom: 1px solid #eee;
     padding-bottom: 50px;
   }
 
@@ -275,8 +274,6 @@ section {
   background-image: url('/assets/congruent_outline.png');
 
   .container {
-    margin-top: 10px;
-    border-bottom: 1px solid #eee;
     padding-bottom: 50px;
   }
 
@@ -291,20 +288,16 @@ section {
     padding-top: 30px;
   }
 
-  h4 {
+  .homepage-third-subheader {
     text-align: center;
     color: #a6a6a6;
     margin-top: 20px;
   }
-}
-
-.homepage-fourth {
-  min-height: 400px;
-  background-image: url('/assets/congruent_outline.png');
-  padding-bottom: 40px;
 
   .classes {
+    border-top: 1px solid #eee;
     min-height: 200px;
+    padding-top: 20px;
     margin-top: 5%;
 
     h3 {
@@ -317,9 +310,10 @@ section {
       font-weight: 400;
     }
 
-    .fa, .fa-bicycle {
+    .icon {
       text-align: center;
       color: white;
+      font-size: 26px;
     }
 
     .training-content {
@@ -335,6 +329,14 @@ section {
     }
   }
 }
+
+// .homepage-fourth {
+//   min-height: 400px;
+//   background-image: url('/assets/congruent_outline.png');
+//   padding-bottom: 40px;
+
+  
+// }
 
 .blog-top {
   margin-top: 0px;
