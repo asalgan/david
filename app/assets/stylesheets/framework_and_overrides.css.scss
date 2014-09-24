@@ -620,18 +620,38 @@ footer {
 }
 
 .about-page-top {
-  margin-top: 50px;
+  background-image: url('/assets/david_pushup.jpg');
+  background-size: cover;
+  min-height: 600px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 
   .about-page-header {
-    font-size: 32px;
-    line-height: 37px;
-    font-family: 'Noto Sans', sans-serif;
     font-weight: 600;
-    color: #3b3b3b;
+    color: white;
+    margin-top: 120px;
     text-transform: uppercase;
-    margin: 0px;
     letter-spacing: -1px;
     -webkit-font-smoothing: antialiased;
+
+    .about {
+      font-size: 56px;
+      display: block;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 100;
+      letter-spacing: 10px;
+      padding-bottom: 30px;
+    }
+
+    .david {
+      font-size: 140px;
+      display: block;
+      font-weight: 900;
+      letter-spacing: 10px;
+      padding-left: 20px;
+      border-left: 5px solid $red;
+      font-family: 'Lato', sans-serif;
+    }
   }
 }
 
