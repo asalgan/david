@@ -167,9 +167,9 @@ section {
   @extend %transition;
   border-radius: 4px;
   font-size: 16px;
+  float: left;
   color: white;
   position: relative;
-  float: right;
   margin-top: 20px;
   text-decoration: none;
   background-color: none;
@@ -668,6 +668,14 @@ footer {
   .content {
     padding: 20px;
     font-size: 22px;
+  }
+
+  .contact-now {
+    float: left;
+
+    .contact-now-button {
+      @extend %green-button;
+    }
   }
 }
 
