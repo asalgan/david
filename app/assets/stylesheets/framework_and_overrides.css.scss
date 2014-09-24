@@ -12,6 +12,7 @@ $red: #FF0000;
 html, body {
   -webkit-font-smoothing: antialiased;
   min-height: 100%;
+  margin: 0;
 }
 
 li {
@@ -265,6 +266,30 @@ section {
 
   .david-img {
     width: 100%;
+  }
+}
+
+.homepage-image {
+  background-image: url('/assets/david_large.jpg');
+  min-height: 350px;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  left: 0;
+  background-repeat: no-repeat;
+  padding: 0;
+
+  blockquote {
+    quotes: none;
+    border: none;
+    margin-top: 20px;
+
+    .quote {
+      font-size: 36px;
+      line-height: 46px;
+      color: #fff;
+      text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.50);
+    }
   }
 }
 
