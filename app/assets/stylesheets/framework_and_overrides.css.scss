@@ -241,7 +241,7 @@ section {
 
   .container {
     margin-top: 40px;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
   }
 
   h4 {
@@ -264,8 +264,13 @@ section {
     }
   }
 
-  .david-img {
-    width: 100%;
+  .david-pic {
+    margin-top: 40px;
+
+    .david-img {
+      width: 100%;
+      box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+    }
   }
 }
 
@@ -322,6 +327,7 @@ section {
       left: 0;
       width: 100%;
       height: 100%;
+      box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
     }
   }
 
