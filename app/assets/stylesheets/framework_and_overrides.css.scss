@@ -197,10 +197,12 @@ section {
 }
 
 .homepage-main {
-  background-image: url('/assets/lifting.jpg');
+  background-image: url('/assets/homepage_main.jpg');
   min-height: 450px;
   padding-bottom: 50px;
+  background-attachment: fixed;
   margin-top: 0px;
+  background-size: cover;
   background-repeat: no-repeat;
 
   .headers {
@@ -219,11 +221,12 @@ section {
     }
 
     .homepage-subheader {
-      color: #444;
+      color: white;
       line-height: 26px;
       letter-spacing: 1px;
       font-size: 18px;
       text-align: center;
+      text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.50);
     }
   }
 
@@ -245,14 +248,21 @@ section {
   }
 
   h4 {
-    text-align: center;
-    color: #a6a6a6;
-    margin-top: 20px;
+    margin-top: 5%;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: $red;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-family: 'Lato', sans-serif;
   }
 
   .homepage-second-header {
     @extend %header-text;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    color: #a6a6a6;
+    font-size: 56px;
+    font-family: 'Lato', sans-serif;
   }
 
   .about {
@@ -667,8 +677,8 @@ footer {
   }
 
   .content {
-    padding: 20px;
-    font-size: 22px;
+    padding: 10px;
+    font-size: 20px;
   }
 
   .contact-now {
@@ -678,6 +688,10 @@ footer {
       @extend %green-button;
     }
   }
+}
+
+.about-page-image {
+  // background-image: url('')
 }
 
 .individual-blog-post {
