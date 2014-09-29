@@ -399,7 +399,6 @@ section {
 .blog-top {
   margin-top: 0px;
   min-height: 175px;
-  border-bottom: 1px solid #d9d9de;
 
   .blog-header {
     font-size: 40px;
@@ -465,10 +464,6 @@ section {
       letter-spacing: 1px;
       color: #a3a3a3;
       font-weight: bold;
-    }
-
-    .edit-blog-post-button {
-      float: right;
     }
   }
 }
@@ -688,26 +683,31 @@ footer {
       @extend %green-button;
     }
   }
-}
 
-.about-page-image {
-  // background-image: url('')
+  .david-bball {
+    box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+  }
 }
 
 .individual-blog-post {
 
+  .blog-post-title {
+    margin-right: 10px;
+    text-align: center;
+    line-height: 46px;
+    color: #505050;
+    display: block;
+    margin-top: 50px;
+    text-transform: uppercase;
+  }
+
   .blog-post-date {
-    margin-top: 40px;
+    margin-bottom: 40px;
     font-size: 14px;
     letter-spacing: 1px;
     color: #a3a3a3;
     font-weight: bold;
-  }
-
-  .blog-post-title {
-    margin-bottom: 40px;
-    display: inline-block;
-    margin-right: 10px;
+    text-align: center;
   }
 
   .blog-post-content {
@@ -724,6 +724,20 @@ footer {
     .share-post {
       padding-bottom:10px;
       text-align: center;
+    }
+  }
+
+  .edit-blog-post-button {
+    display: block;
+    text-align: center;
+  }
+
+  .other-blog-posts {
+    margin: 0px 15px;
+    
+    .blog-post-links {
+      display: block;
+      margin: 15px 0px;
     }
   }
 }

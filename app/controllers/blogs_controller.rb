@@ -7,6 +7,7 @@ class BlogsController < ApplicationController
 
   def show
     @blog = Blog.find(params[:id])
+    @other_posts = Blog.last(5)
   end
 
   def new

@@ -2,16 +2,22 @@
 <% content_for :title do %><%= @blog.title %><% end %>
 
 <div class="container individual-blog-post">
-	<p class="blog-post-date"><%= @blog.created_at.strftime("%B %m, %Y ") %></p>
-	<h1 class="blog-post-title"><%= @blog.title %></h1>	
+	<h1 class="blog-post-title"><%= @blog.title %></h1>
 	<% if user_signed_in? && current_user.admin? %>
 		<%= link_to 'Edit blog post', edit_blog_path(:id => params[:id]), :class => "edit-blog-post-button" %>
 	<% end %>
+	<p class="blog-post-date"><%= @blog.created_at.strftime("%B %m, %Y ") %></p>	
 	<div class="blog-post-content col-md-9">
 		<%= @blog.content.html_safe %>
 	</div>
 	<div class="social-share col-md-2 col-md-offset-1">
 		<p class="share-post">Share this post</p>
 		<div class="addthis_sharing_toolbox"></div>
+	</div>
+	<div class="other-blog-posts col-md-2">
+		<p>Recent blog posts</p>
+		<% @other_posts.each do |post| %>
+			<%= link_to "#{post.title}", blog_path(:id => post.id), :class => "blog-post-links" %>
+		<% end %>
 	</div>
 </div>
