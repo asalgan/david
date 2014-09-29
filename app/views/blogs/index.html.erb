@@ -17,8 +17,8 @@
       <% @blog_posts.order("created_at DESC").each do |blog_post| %>
         <div class="blog-article">
           <h2 class="blog-post-title"><%= link_to "#{blog_post.title}", blog_path(:id => blog_post.id) %></h2>
-          <p class="blog-date"><%= blog_post.created_at.strftime("%B %m, %Y ") %></p>
-          <%= blog_post.content.html_safe[0..400].html_safe %>...
+          <p class="blog-date"><%= blog_post.created_at.strftime("%B %m, %Y ") %> | David Kushnir</p>
+          <%= blog_post.content.html_safe[0..350].html_safe %>...
         </div>
       <% end %>
     </div>

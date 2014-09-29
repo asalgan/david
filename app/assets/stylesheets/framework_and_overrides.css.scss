@@ -38,6 +38,7 @@ img {
   font-size: 20px;
   border-radius: 0px;
   margin-bottom: 0px;
+  border-bottom: 1px solid #d9d9de;
 
   .navbar-collapse ul li a {
     color: black;
@@ -415,6 +416,10 @@ section {
     margin-top: 30px;
     border-top: 5px solid #444;
     border-bottom: 5px solid #444;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
@@ -429,6 +434,7 @@ section {
 
 .new-blog-post-button {
   @extend %green-button;
+  float: right;
 }
 
 .blog-main {
@@ -492,6 +498,8 @@ section {
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
+    float: right;
+    margin-bottom: 20px;
   }
 }
 
@@ -544,7 +552,7 @@ footer {
 }
 
 .redactor_editor {
-  height: 200px;
+  height: 300px;
 }
 
 .redactor_toolbar {
@@ -724,6 +732,7 @@ footer {
     .share-post {
       padding-bottom:10px;
       text-align: center;
+      font-weight: 700;
     }
   }
 
@@ -734,10 +743,27 @@ footer {
 
   .other-blog-posts {
     margin: 0px 15px;
-    
+    background-color: #f8f8f8;
+    border-top: 3px solid $red;
+    margin-top: 30px;
+    padding: 20px;
+
+    .header {
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
     .blog-post-links {
       display: block;
-      margin: 15px 0px;
+      margin-bottom: 6px;
+      margin-top: 6px;
+      padding-bottom: 6px;
+      border-bottom: 1px dotted #d9d9de;
+
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }

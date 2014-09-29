@@ -1,12 +1,16 @@
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-540e8a272e5d8ff1"></script>
 <% content_for :title do %><%= @blog.title %><% end %>
 
+<section class="blog-top">
+  <%= link_to "Tales from the gym", blogs_url, :class => "blog-header col-md-6 col-md-offset-3" %>
+</section>
+
 <div class="container individual-blog-post">
 	<h1 class="blog-post-title"><%= @blog.title %></h1>
 	<% if user_signed_in? && current_user.admin? %>
 		<%= link_to 'Edit blog post', edit_blog_path(:id => params[:id]), :class => "edit-blog-post-button" %>
 	<% end %>
-	<p class="blog-post-date"><%= @blog.created_at.strftime("%B %m, %Y ") %></p>	
+	<p class="blog-post-date"><%= @blog.created_at.strftime("%B %m, %Y ") %> | David Kushnir</p>	
 	<div class="blog-post-content col-md-9">
 		<%= @blog.content.html_safe %>
 	</div>
@@ -15,7 +19,7 @@
 		<div class="addthis_sharing_toolbox"></div>
 	</div>
 	<div class="other-blog-posts col-md-2">
-		<p>Recent blog posts</p>
+		<p class="header">Recent blog posts</p>
 		<% @other_posts.each do |post| %>
 			<%= link_to "#{post.title}", blog_path(:id => post.id), :class => "blog-post-links" %>
 		<% end %>
