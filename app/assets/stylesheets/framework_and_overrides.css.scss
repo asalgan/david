@@ -236,6 +236,8 @@ section {
       float: right;
       margin-top: 5%;
       @extend %green-button;
+      font-weight: 900;
+      letter-spacing: 1px;
     }
   }
 }
@@ -250,12 +252,12 @@ section {
 
   h4 {
     margin-top: 5%;
-    font-size: 30px;
+    font-size: 50px;
     text-transform: uppercase;
     color: $red;
-    font-weight: 400;
+    font-weight: 800;
     letter-spacing: 3px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
   }
 
   .homepage-second-header {
@@ -272,6 +274,15 @@ section {
       font-size: 18px;
       line-height: 24px;
       padding-top: 30px;
+    }
+
+    .decorative-line {
+      background: $red;
+      display: inline-block;
+      height: 6px;
+      margin-top: 14px;
+      position: relative;
+      width: 70px;
     }
   }
 
