@@ -252,7 +252,7 @@ section {
 
   h4 {
     margin-top: 5%;
-    font-size: 50px;
+    font-size: 40px;
     text-transform: uppercase;
     color: $red;
     font-weight: 800;
@@ -286,13 +286,23 @@ section {
     }
   }
 
-  .david-pic {
-    margin-top: 40px;
-
-    .david-img {
-      width: 100%;
-      box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+  .carousel {
+    margin-top: 5%;
+    .carousel-image {
+      min-width: 100%;
     }
+  }
+
+  .fa-chevron-right, .fa-chevron-left {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    font-size: 30px;
+    margin-left: -15px;
   }
 }
 
@@ -777,4 +787,8 @@ footer {
       }
     }
   }
+}
+
+.carousel-indicators {
+  bottom: 0px;
 }
