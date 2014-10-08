@@ -161,7 +161,7 @@ section {
   margin: 0 0 16px 0;
 }
 
-%green-button {
+%red-button {
   background-color: $red;
   padding: 10px 60px;
   text-decoration: none;
@@ -176,6 +176,8 @@ section {
   background-color: none;
   border-bottom: 3px solid darken($red, 10%);
   -webkit-font-smoothing: antialiased;
+  font-weight: 900;
+  letter-spacing: 1px;
 
   &:hover {
     background-color: darken($red, 5%);
@@ -203,6 +205,9 @@ section {
   padding-bottom: 50px;
   background-attachment: fixed;
   margin-top: 0px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -235,9 +240,7 @@ section {
     .start-now-button {
       float: right;
       margin-top: 5%;
-      @extend %green-button;
-      font-weight: 900;
-      letter-spacing: 1px;
+      @extend %red-button;
     }
   }
 }
@@ -311,6 +314,9 @@ section {
   min-height: 400px;
   position: relative;
   background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   left: 0;
   background-repeat: no-repeat;
@@ -454,7 +460,7 @@ section {
 }
 
 .new-blog-post-button {
-  @extend %green-button;
+  @extend %red-button;
   float: right;
 }
 
@@ -515,7 +521,7 @@ section {
   }
 
   .create-blog-post-button, .save-changes-button {
-    @extend %green-button;
+    @extend %red-button;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
@@ -655,7 +661,10 @@ footer {
 
 .about-page-top {
   background-image: url('/assets/david_pushup.jpg');
-  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
   min-height: 600px;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -709,7 +718,7 @@ footer {
     float: left;
 
     .contact-now-button {
-      @extend %green-button;
+      @extend %red-button;
     }
   }
 
