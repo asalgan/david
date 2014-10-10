@@ -32,7 +32,7 @@ img {
 }
 
 .navbar {
-  background-color: white;
+  background-color: black;
   text-transform: uppercase;
   border: none;
   font-size: 20px;
@@ -41,7 +41,7 @@ img {
   border-bottom: 1px solid #d9d9de;
 
   .navbar-collapse ul li a {
-    color: black;
+    color: white;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     @extend %transition;
@@ -215,19 +215,9 @@ section {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
 
-    .homepage-header {
-      margin-top: 60px;
-      font-size: 36px;
-      line-height: 46px;
-      letter-spacing: -1px;
-      color: $red;
-      margin-bottom: 5%;
-      padding-right: 0px;
-      text-align: center;
-    }
-
     .homepage-subheader {
       color: white;
+      margin-top: 15%;
       line-height: 26px;
       letter-spacing: 1px;
       font-size: 18px;
@@ -247,28 +237,22 @@ section {
 
 .homepage-second {
   min-height: 300px;
+  background-color: black;
+
 
   .container {
     margin-top: 40px;
     padding-bottom: 80px;
   }
 
-  h4 {
+  .join-me {
     margin-top: 5%;
     font-size: 40px;
     text-transform: uppercase;
-    color: $red;
+    color: white;
     font-weight: 800;
     letter-spacing: 3px;
     font-family: 'Raleway', sans-serif;
-  }
-
-  .homepage-second-header {
-    @extend %header-text;
-    margin-bottom: 30px;
-    color: #a6a6a6;
-    font-size: 56px;
-    font-family: 'Lato', sans-serif;
   }
 
   .about {
@@ -277,10 +261,11 @@ section {
       font-size: 18px;
       line-height: 24px;
       padding-top: 30px;
+      color: white;
     }
 
     .decorative-line {
-      background: $red;
+      background: #86fd00;
       display: inline-block;
       height: 6px;
       margin-top: 14px;
@@ -293,6 +278,13 @@ section {
     margin-top: 5%;
     .carousel-image {
       min-width: 100%;
+    }
+
+    .carousel-caption {
+      h3 {
+        margin-bottom: 60%;
+        font-size: 50px;
+      }
     }
   }
 
@@ -345,7 +337,7 @@ section {
 .homepage-third {
   min-height: 300px;
   padding-top: 30px;
-  background-image: url('/assets/congruent_outline.png');
+  background-color: black;
 
   .container {
     padding-bottom: 50px;
@@ -398,7 +390,7 @@ section {
 
     .icon {
       text-align: center;
-      color: white;
+      color: #86fd00;
       font-size: 26px;
     }
 
@@ -800,4 +792,11 @@ footer {
 
 .carousel-indicators {
   bottom: 0px;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+.green {
+  color: #86fd00;
 }
