@@ -3,6 +3,7 @@
 
 $red: #FF0000;
 $neon-green: #86fd00;
+$black: #2e2f33;
 
 // font-family: 'Noto Sans', sans-serif;
 // font-family: 'Lato', sans-serif;
@@ -34,13 +35,13 @@ img {
 }
 
 .navbar {
-  background-color: black;
+  background-color: $black;
   text-transform: uppercase;
   border: none;
   font-size: 20px;
   border-radius: 0px;
   margin-bottom: 0px;
-  border-bottom: 1px solid #d9d9de;
+  border-bottom: 1px solid $black;
 
   .navbar-collapse ul li a {
     color: white;
@@ -247,7 +248,7 @@ section {
 
 .homepage-second {
   min-height: 300px;
-  background-color: black;
+  background-color: $black;
 
 
   .container {
@@ -353,7 +354,7 @@ section {
 .homepage-third {
   min-height: 300px;
   padding-top: 30px;
-  background-color: black;
+  background-color: $black;
 
   .container {
     padding-bottom: 50px;
