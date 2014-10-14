@@ -41,7 +41,7 @@ img {
   font-size: 20px;
   border-radius: 0px;
   margin-bottom: 0px;
-  border-bottom: 1px solid $black;
+  border-bottom: 1px solid #d9d9de;
 
   .navbar-collapse ul li a {
     color: white;
@@ -290,11 +290,11 @@ section {
       height: 100%;
       
       h3 {
-        color: $neon-green;
+        color: $red;
         font-size: 3em;
         padding: 0px 10px 10px 10px;
         margin-top: 5px;
-        background-color: rgba(0, 0, 0, 0.50);
+        // background-color: rgba(0, 0, 0, 0.50);
       }
 
       p {
@@ -726,6 +726,10 @@ footer {
 
   .david-bball {
     box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+  }
+
+  hr {
+    border: 1px solid $black;
   }
 }
 
