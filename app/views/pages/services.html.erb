@@ -1,1 +1,19 @@
 <% content_for :title do %>Services<% end %>
+
+<section class="services-page-top">
+	<div class="container">
+		<div class="col-md-6">
+			<h1 class="services-page-header">Get the body you always wanted!</h1>
+			<span class="decorative-line"></span>
+			<h2 class="services-page-subheader">Are you tired of not seeing the results you desire? Find out what your body has been calling for! With nutritious diets, body sculpting workouts and constant personal motivation, you will finally see the outcome you have been waiting for.</h2>
+			<ul class="services-list">
+				<li class="service"><i class="fa fa-check"></i> Safe and functional workouts</li>
+				<li class="service"><i class="fa fa-check"></i> Nutritious AND delicious meal plan</li>
+				<li class="service"><i class="fa fa-check"></i> Suitable for all ages and genders</li>
+				<li class="service"><i class="fa fa-check"></i> Cost worthy</li>
+			</ul>
+			<%= link_to 'Get started  &#8594;'.html_safe, services_path, :class => "start-now-button" %>
+		</div>
+		<div class="col-md-6"><img src="/assets/david_cartoon.jpg" alt="" class="david-cartoon-img"></div>
+	</div>
+</section>
