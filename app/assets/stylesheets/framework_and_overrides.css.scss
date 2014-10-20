@@ -759,18 +759,28 @@ footer {
       @extend %decorative-line;
       background-color: white;
       box-shadow: 1px 1px 1px #000;
+      display: inherit;
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+    }
+
+    .contact-now-button {
+      @extend %red-button;
+      font-size: 18px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+      display: inline-block;
     }
   }
 
   .contact-now {
-    float: left;
+    float: none;
 
-    .contact-now-button {
-      @extend %red-button;
-      float: none; 
-      margin-left: auto; 
-      margin-right: auto;
-    }
+
   }
 }
 
