@@ -605,64 +605,68 @@ footer {
   }
 }
 
-.contact {
-  margin-top: 50px;
+.contact-page-top {
+  padding-top: 2%;
 
-  .contact-form-header {
-    font-size: 32px;
-    line-height: 37px;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 600;
-    color: #3b3b3b;
-    text-transform: uppercase;
-    margin: 0px;
-    letter-spacing: -1px;
-    -webkit-font-smoothing: antialiased;
-  }
+  .contact {
+    margin-top: 50px;
 
-  #new_contact {
-    label {
-      vertical-align: top;
-      margin-top: 10px;
-      color: #626262;
-    }
-    
-    #contact_name, #contact_email {
-      @extend %form-fields;
-      height: 38px;
-      width: 100%;
-      font-weight: 400;
-      font-size: 16px;
-      color: #515357;
-      padding-left: 5px;
-      margin-top: 3px;
-      margin-bottom: 2px;
-    }
-
-    #contact_message {
-      @extend %form-fields;
-      width: 100%;
-      font-weight: 400;
-      font-size: 16px;
-      color: #515357;
-      padding-left: 5px;
-      margin-top: 10px;
-      height: 80px;
-    }
-
-    .contact-submit {
-      height: 40px;
-      width: 130px;
-      background-color: $red;
-      border: none;
+    .contact-form-header {
+      font-size: 32px;
+      line-height: 37px;
       font-family: 'Noto Sans', sans-serif;
-      -webkit-font-smoothing: antialiased;
-      @extend %transition;
       font-weight: 600;
-      border-radius: 3px;
+      color: #3b3b3b;
+      text-transform: uppercase;
+      margin: 0px;
+      letter-spacing: -1px;
+      -webkit-font-smoothing: antialiased;
+    }
 
-      &:hover {
-        background-color: darken($red, 10%)
+    #new_contact {
+      label {
+        vertical-align: top;
+        margin-top: 10px;
+        color: #626262;
+      }
+      
+      #contact_name, #contact_email {
+        @extend %form-fields;
+        height: 38px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 16px;
+        color: #515357;
+        padding-left: 5px;
+        margin-top: 3px;
+        margin-bottom: 2px;
+      }
+
+      #contact_message {
+        @extend %form-fields;
+        width: 100%;
+        font-weight: 400;
+        font-size: 16px;
+        color: #515357;
+        padding-left: 5px;
+        margin-top: 10px;
+        height: 80px;
+      }
+
+      .contact-submit {
+        height: 40px;
+        width: 130px;
+        background-color: $red;
+        border: none;
+        font-family: 'Noto Sans', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        @extend %transition;
+        font-weight: 600;
+        border-radius: 3px;
+
+        &:hover {
+          background-color: darken($red, 10%)
+        }
       }
     }
   }
@@ -904,8 +908,21 @@ footer {
   }
 }
 
+.services-images {
+  padding-top: 2%;
+  vertical-align: center;
+
+  img {
+    max-height: 300px;
+  }
+
+  .img3 {
+    padding-top: 2%;
+  }
+}
+
 .individual-services {
-  padding-top: 40px;
+  padding-top: 1%;
   
   .service-header {
     font-size: 26px;

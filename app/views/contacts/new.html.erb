@@ -1,21 +1,25 @@
 <% content_for :title do %>Contact<% end %>
 
+<section class="contact-page-top">
+	<div class="container">
+		<div class="contact col-md-6">
+			<h2 class="contact-form-header col-md-12">Get in touch</h2>
+			<%= simple_form_for Contact.new, :html => {:class => 'form-horizontal col-md-12' } do |f| %>
+			  <%= f.input :name, required: true  %>
+			  <%= f.input :email, required: true%>
+			  <%= f.input :message, :as => :text, required: true %>
+			  
+			  <div class= "hidden">
+			    <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+			  </div>
 
-<div class="container">
-	<div class=" contact col-md-6">
-		<h2 class="contact-form-header col-md-12">Get in touch</h2>
-		<%= simple_form_for Contact.new, :html => {:class => 'form-horizontal col-md-12' } do |f| %>
-		  <%= f.input :name, required: true  %>
-		  <%= f.input :email, required: true%>
-		  <%= f.input :message, :as => :text, required: true %>
-		  
-		  <div class= "hidden">
-		    <%= f.input :nickname, :hint => 'Leave this field blank!' %>
-		  </div>
-
-		  <div>
-		    <%= f.button :submit, 'Send message', data: { "loading-text" => "Sending..." }, :class=> "btn btn-primary contact-submit" %>
-		  </div>
-		<% end %>
+			  <div>
+			    <%= f.button :submit, 'Send message', data: { "loading-text" => "Sending..." }, :class=> "btn btn-primary contact-submit" %>
+			  </div>
+			<% end %>
+		</div>
+		<div class="contact-img col-md-6">
+			<img src="/assets/david_pointing.jpg" alt="">
+		</div>
 	</div>
-</div>
+</section>
