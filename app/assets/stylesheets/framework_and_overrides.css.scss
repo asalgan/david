@@ -866,7 +866,7 @@ footer {
 
   .services-page-header {
     font-weight: 700;
-    line-height: 56px;
+    line-height: 52px;
     font-size: 60px;
     color: $red;
     text-transform: uppercase;
@@ -908,19 +908,6 @@ footer {
   }
 }
 
-.services-images {
-  padding-top: 2%;
-  vertical-align: center;
-
-  img {
-    max-height: 300px;
-  }
-
-  .img3 {
-    padding-top: 2%;
-  }
-}
-
 .individual-services {
   padding-top: 1%;
   
@@ -942,8 +929,10 @@ footer {
       color: #777;
     }
   }
-
-
+  
+  .service-img {
+    height: 190px;
+  }
 }
 
 .carousel-indicators {
