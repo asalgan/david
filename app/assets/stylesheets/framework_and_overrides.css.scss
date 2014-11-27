@@ -911,6 +911,13 @@ footer {
 .individual-services {
   padding-top: 1%;
   padding-bottom: 1%;
+
+  .individual-services-header {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Noto Sans', sans-serif;    
+    margin-bottom: 0px;
+  }
   
   .service-header {
     font-size: 26px;
