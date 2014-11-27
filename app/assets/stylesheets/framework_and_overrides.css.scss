@@ -937,6 +937,58 @@ footer {
   }
 }
 
+.services-page-image {
+  background-image: url('/assets/quote_image2.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+  min-height: 750px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  .services-page-quote {
+    margin-top: 12%;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+
+    .quote {
+      font-size: 60px;
+      font-weight: 800;
+      font-family: 'Raleway', sans-serif;
+      color: white;
+    }
+
+    .quote-from {
+      font-size: 40px;
+      font-weight: 800;
+      font-family: 'Raleway', sans-serif;
+      color: white;
+    }
+
+    .decorative-line {
+      @extend %decorative-line;
+      background-color: white;
+      box-shadow: 1px 1px 1px #000;
+      display: inherit;
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+    }
+
+    .contact-now-button {
+      @extend %red-button;
+      font-size: 18px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+      display: inline-block;
+    }
+  }
+}
+
 .testimonials {
   background-color: rgba(248, 249, 251, 1);
   height: 100%;
@@ -945,7 +997,7 @@ footer {
   .testimonials-header {
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Noto Sans', sans-serif;    
     margin-bottom: 0px;
   }
 
