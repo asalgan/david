@@ -910,6 +910,7 @@ footer {
 
 .individual-services {
   padding-top: 1%;
+  padding-bottom: 1%;
   
   .service-header {
     font-size: 26px;
@@ -932,7 +933,77 @@ footer {
   
   .service-img {
     height: 190px;
+    margin-top: 2%;
   }
+}
+
+.testimonials {
+  background-color: rgba(248, 249, 251, 1);
+  height: 100%;
+  padding-bottom: 1%;
+
+  .testimonials-header {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 0px;
+  }
+
+  .testimonial {
+    margin-top: 2%;
+    min-height: 110px;
+
+    .right {
+      float: right;
+    }
+
+    .left {
+      float: left;
+    }
+
+    .testimonial-background {
+      -webkit-box-shadow: 0px 0px 14px 3px rgba(56, 67, 67, 0.2);
+      -moz-box-shadow: 0px 0px 14px 3px rgba(56, 67, 67, 0.2);
+      box-shadow: 0px 0px 14px 3px rgba(56, 67, 67, 0.2);      
+      height: 106px;
+      width: 106px;
+      border-radius: 50%;
+      z-index: 100;
+      position: inherit;
+
+      .testimonial-img {
+        border-radius: 50%;
+        margin-top: 3px;
+      }
+    }
+  }
+}
+
+.bubble {
+  position: initial;
+  margin-top: 2.5%;
+  min-height: 80px;
+  background: #FFFFFF;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 3px 12px 0px rgba(56, 67, 67, 0.1);
+  -moz-box-shadow: 0px 3px 12px 0px rgba(56, 67, 67, 0.1);
+  box-shadow: 0px 3px 12px 0px rgba(56, 67, 67, 0.1);
+
+  .testimonial-content {
+    font-family: 'Raleway', sans-serif;
+  }
+}
+
+.bubble-left {
+  margin-left: 10%;
+  padding: 9px 9px 9px 80px;
+}
+
+.bubble-right {
+  margin-right: 10%;
+  padding: 9px 80px 9px 9px;
 }
 
 .carousel-indicators {
