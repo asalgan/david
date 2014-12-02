@@ -425,13 +425,51 @@ section {
   }
 }
 
-// .homepage-fourth {
-//   min-height: 400px;
-//   background-image: url('/assets/congruent_outline.png');
-//   padding-bottom: 40px;
+.homepage-fourth {
+  padding-top: 30px;
+  background-color: rgba(248, 249, 251, 1);
+  padding-bottom: 2%;
 
-  
-// }
+  .homepage-fourth-header {
+    @extend %header-text;
+    color: $black;
+    line-height: 46px;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  .blog-post-title {
+    text-align: center;
+    color: $black;
+  }
+
+  .blog-post-created {
+    color: lighten($black, 30%);
+    text-align: center;
+  }
+
+  .by-david {
+    color: $black;
+    text-align: center;
+  }
+
+  .contact-now {
+    text-align: center;
+
+    .contact-now-button {
+      @extend %red-button;
+      font-size: 18px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+      display: inline-block;
+    }
+  }
+}
 
 .blog-top {
   margin-top: 0px;
@@ -1064,6 +1102,7 @@ footer {
   margin-right: 10%;
   padding: 9px 80px 9px 9px;
 }
+
 
 .carousel-indicators {
   bottom: 0px;

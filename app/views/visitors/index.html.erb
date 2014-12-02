@@ -108,8 +108,18 @@
 
 <section class="homepage-fourth">
 	<div class="container">
-
+		<h2 class="homepage-fourth-header">Latest blog posts</h2>
+		<img src="/assets/divider_1.png" alt="">
+		<% @blog_post_previews.reverse.each do |blog_post| %>
+		<div class="col-md-4">
+			<h4><%= link_to "#{blog_post.title}", blog_path(:id => blog_post.id), class: "blog-post-title" %></h4>
+			<p class="blog-post-created">Posted <%= time_ago_in_words(blog_post.created_at) %> ago</p>
+			<p class="by-david">By: David Kushnir</p>
+		</div>
+		<% end %>
+		<div class="contact-now">
+			<%= link_to 'Contact David'.html_safe, new_contact_path, :class => "contact-now-button" %>
+		</div>
 	</div>
 </section>
-
 
