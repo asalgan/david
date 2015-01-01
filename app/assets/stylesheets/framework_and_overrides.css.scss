@@ -423,51 +423,29 @@ section {
       font-weight: 400;
     }
   }
-}
-
-.homepage-fourth {
-  padding-top: 30px;
-  background-color: rgba(248, 249, 251, 1);
-  padding-bottom: 2%;
-
-  .homepage-fourth-header {
-    @extend %header-text;
-    color: $black;
-    line-height: 46px;
-  }
-
-  h4 {
-    text-align: center;
-  }
 
   .blog-post-title {
     text-align: center;
-    color: $black;
+
+    a {
+      color: white;
+    }
   }
 
   .blog-post-created {
-    color: lighten($black, 30%);
+    color: lighten($black, 50%);
+    text-align: center;
+  }
+
+  .blog-post-content {
+    color: white;
     text-align: center;
   }
 
   .by-david {
-    color: $black;
+    color: white;
+    margin-top: 10px;
     text-align: center;
-  }
-
-  .contact-now {
-    text-align: center;
-
-    .contact-now-button {
-      @extend %red-button;
-      font-size: 18px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      margin-left: auto;
-      margin-right: auto;
-      float: none;
-      display: inline-block;
-    }
   }
 }
 

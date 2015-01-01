@@ -85,14 +85,12 @@
 		<img src="/assets/divider_1.png" alt="">
 		<% @blog_post_previews.reverse.each do |blog_post| %>
 		<div class="col-md-4">
-			<h4><%= link_to "#{blog_post.title}", blog_path(:id => blog_post.id), class: "blog-post-title" %></h4>
+			<h4 class="blog-post-title"><%= link_to "#{blog_post.title}", blog_path(:id => blog_post.id) %></h4>
 			<p class="blog-post-created">Posted <%= time_ago_in_words(blog_post.created_at) %> ago</p>
+			<p class="blog-post-content"><%= truncate(strip_tags(blog_post.content), length: 105, separator: ' ') %></p>
 			<p class="by-david">By: David Kushnir</p>
 		</div>
 		<% end %>
-		<div class="contact-now">
-			<%= link_to 'Contact David'.html_safe, new_contact_path, :class => "contact-now-button" %>
-		</div>
 		<div class="classes col-md-12">
 			<div class="col-md-3">
 				<h4 class="icon"><i class="fa fa-comments"></i></h4>
@@ -118,9 +116,9 @@
 	</div>
 </section>
 
-<section class="homepage-fourth">
+<!-- <section class="homepage-fourth">
 	<div class="container">
 		
 	</div>
-</section>
+</section> -->
 
