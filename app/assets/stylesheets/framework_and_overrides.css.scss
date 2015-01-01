@@ -947,7 +947,7 @@ footer {
   ul {
   padding-left: 0px;
 
-    li {
+    .benefit {
       text-align: center;
       margin-bottom: 16px;
       font-size: 18px;
@@ -959,6 +959,19 @@ footer {
     height: 190px;
     margin-top: 2%;
     margin-bottom: 5%;
+  }
+
+  .pricing-box {
+    background-color: #f8f9fb;
+    text-align: left;
+    padding: 10px;
+
+    .pricing-item {
+      .price {
+        float: right;
+        font-weight: 500;
+      }
+    }
   }
 }
 
