@@ -937,10 +937,11 @@ footer {
   
   .service-header {
     font-size: 16px;
-    font-weight: 900;
+    font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 20px;
+    color: #e60000;
     font-family: 'Lato', sans-serif;
   }
 
@@ -952,6 +953,10 @@ footer {
       margin-bottom: 16px;
       font-size: 18px;
       color: #777;
+
+      .fa-check {
+        color: #86fd00;
+      }
     }
   }
   
@@ -962,15 +967,15 @@ footer {
   }
 
   .pricing-box {
-    background-color: #f8f9fb;
     text-align: left;
     padding: 10px;
+    font-family: 'Lato', sans-serif;
 
     .pricing-item {
       padding: 2px 0px;
       .price {
         float: right;
-        font-weight: 500;
+        font-weight: bold;
       }
     }
   }
@@ -982,13 +987,13 @@ footer {
   .special-offer {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #f8f9fb;
     text-align: left;
+    font-family: 'Lato', sans-serif;
 
     .offer-desc {
       text-align: center;
       text-transform: uppercase;
-      margin-top: 10px;
+      margin-bottom: 10px;
     }
 
     .pricing-item{
@@ -996,7 +1001,7 @@ footer {
 
       .price {
         float: right;
-        font-weight: 500;
+        font-weight: bold;
       }
     }
   }
