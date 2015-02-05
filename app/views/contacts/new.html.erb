@@ -8,6 +8,7 @@
 			  <%= f.input :name, required: true  %>
 			  <%= f.input :email, required: true%>
 			  <%= f.input :message, :as => :text, required: true %>
+			  <% options_for_select = ["General question", "Training", "Blog suggestions/post"] %>
 			  
 			  <div class= "hidden">
 			    <%= f.input :nickname, :hint => 'Leave this field blank!' %>
@@ -17,9 +18,12 @@
 			    <%= f.button :submit, 'Send message', data: { "loading-text" => "Sending..." }, :class=> "btn btn-primary contact-submit" %>
 			  </div>
 			<% end %>
+			<h2 class="contact-form-header col-md-12">Primary gym location</h2>
+			<h4 class="col-md-12">MyBody Complex</h4>
+			<h4 class="col-md-12">193 Northfield Road, Northfield, IL 60093</h4>
 		</div>
 		<div class="contact-img col-md-6">
-			<img src="/assets/david_pointing.jpg" alt="">
+			<img src="/assets/david_pointing.jpg">
 		</div>
 	</div>
 </section>
