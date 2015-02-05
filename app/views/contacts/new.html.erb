@@ -8,7 +8,7 @@
 			  <%= f.input :name, required: true %>
 			  <%= f.input :email, required: true %>
 			  <%= f.input :message, :as => :text, required: true %>
-			  <%= f.input :select, :label => "Reason for contact", :collection => ["General question", "Training", "Blog suggestions/post"], required: true %>
+			  <%= f.input :reason, :label => "Reason for contact", :collection => ["General question", "Training", "Blog suggestions/post"], required: true %>
 			  
 			  <div class= "hidden">
 			    <%= f.input :nickname, :hint => 'Leave this field blank!' %>

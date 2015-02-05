@@ -11,8 +11,8 @@ class ContactsController < ApplicationController
       if @contact.deliver
         format.html { redirect_to new_contact_path, notice: "Thank you for your message, we'll get back to you shortly!" }
       else
+        render :nothing => true
         flash.now[:error] = 'Cannot send message.'
-        render :new
       end
     end
   end
