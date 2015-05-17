@@ -34,7 +34,7 @@
 			      <img src="/assets/slideshow2.jpg" alt="" class="carousel-image">
 			      <div class="carousel-caption">
 			      	<!-- <h3>Determination</h3> -->
-			      	<p>With the motivation from i2i you will have no choice but to be determined and inspired to reach your goals</p>			      
+			      	<p>With the motivation from i2i you will have no choice but to be determined and inspired to reach your goals</p>
 			      </div>
 			    </div>
 			    <div class="item">
@@ -76,49 +76,62 @@
 
 <section class="homepage-third">
 	<div class="container">
-		<!-- <h2 class="homepage-third-header">How can I help?</h2>
-		<h4 class="homepage-third-subheader">Check out the video below</h4>
-		<div class="video col-md-8 col-md-offset-2">
-			<iframe width="640" height="360" src="//www.youtube.com/embed/C4cXmvqkOP8?rel=0" frameborder="0" allowfullscreen></iframe>
-		</div> -->
-		<h2 class="homepage-third-header">Latest blog posts</h2>
-		<img src="/assets/divider_1.png" alt="">
-		<% @blog_post_previews.reverse.each do |blog_post| %>
-		<div class="col-md-4">
-			<h4 class="blog-post-title"><%= link_to "#{blog_post.title}", blog_path(:id => blog_post.id) %></h4>
-			<p class="blog-post-created">Posted <%= time_ago_in_words(blog_post.created_at) %> ago</p>
-			<p class="blog-post-content"><%= truncate(strip_tags(blog_post.content), length: 105, separator: ' ') %></p>
-			<p class="by-david">By: David Kushnir</p>
-		</div>
-		<% end %>
-		<div class="classes col-md-12">
-			<div class="col-md-3">
-				<h4 class="icon"><i class="fa fa-comments"></i></h4>
-				<h3>1 on 1 Training</h3>
-				<p class="training-content">Do you need encouragement to finish that last repetition? Do you need motivation to reach your goals? We all have those days where we can use that hands on motivation. 1 on 1 training gives you that extra push when you think you have nothing left.</p>
+		<div class="row">
+
+			<div class="video col-md-12">
+				<h2 class="homepage-third-header">How can I help?</h2>
+				<h4 class="homepage-third-subheader">Check out the video below</h4>
+				<div class="video col-md-8 col-md-offset-2">
+					<div class="videoWrapper">
+						<iframe src="https://player.vimeo.com/video/126520892" width="100%" height="" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+				</div>
 			</div>
-			<div class="col-md-3">
-				<h4 class="icon"><i class="fa fa-desktop"></i></h4>
-				<h3>Online Training</h3>
-				<p class="training-content">Not everyone needs a personal trainer by their side at all times. Online training gives you a full workout plan detailing what to do.. when to do it and how! This is for the individual who has the motivation but not the moves.</p>
+
+			<div class="col-md-10 col-md-offset-1">
+
+				<h2 class="homepage-third-header">Latest blog posts</h2>
+				<img src="/assets/divider_1.png" alt="">
+				<% @blog_post_previews.reverse.each do |blog_post| %>
+					<div class="col-md-4">
+						<h4 class="blog-post-title"><%= link_to "#{blog_post.title}", blog_path(:id => blog_post.id) %></h4>
+						<p class="blog-post-created">Posted <%= time_ago_in_words(blog_post.created_at) %> ago</p>
+						<p class="blog-post-content"><%= truncate(strip_tags(blog_post.content), length: 105, separator: ' ') %></p>
+						<p class="by-david">By: David Kushnir</p>
+					</div>
+				<% end %>
+				<div class="classes col-md-12">
+					<div class="col-md-3">
+						<h4 class="icon"><i class="fa fa-comments"></i></h4>
+						<h3>1 on 1 Training</h3>
+						<p class="training-content">Do you need encouragement to finish that last repetition? Do you need motivation to reach your goals? We all have those days where we can use that hands on motivation. 1 on 1 training gives you that extra push when you think you have nothing left.</p>
+					</div>
+					<div class="col-md-3">
+						<h4 class="icon"><i class="fa fa-desktop"></i></h4>
+						<h3>Online Training</h3>
+						<p class="training-content">Not everyone needs a personal trainer by their side at all times. Online training gives you a full workout plan detailing what to do.. when to do it and how! This is for the individual who has the motivation but not the moves.</p>
+					</div>
+					<div class="col-md-3">
+						<h4 class="icon"><i class="fa fa-stethoscope"></i></h4>
+						<h3>Diet/Nutrition</h3>
+						<p class="training-content">Whether you are trying to lose weight, change your eating habits or just want to start eating clean, the i2i nutrition plan will provide you with the necessary information to achieve your goals.</p>
+					</div>
+					<div class="col-md-3">
+						<h4 class="icon"><i class="fa fa-bullhorn"></i></h4>
+						<h3>i2i Athlete</h3>
+						<p class="training-content">Are you trying to increase your lateral speed, vertical jump , or anything sports related? i2i Athlete focuses on sports related training, conditioning and skills work to get you ready for the upcoming season.</p>
+					</div>
+				</div>
+
 			</div>
-			<div class="col-md-3">
-				<h4 class="icon"><i class="fa fa-stethoscope"></i></h4>
-				<h3>Diet/Nutrition</h3>
-				<p class="training-content">Whether you are trying to lose weight, change your eating habits or just want to start eating clean, the i2i nutrition plan will provide you with the necessary information to achieve your goals.</p>
-			</div>
-			<div class="col-md-3">
-				<h4 class="icon"><i class="fa fa-bullhorn"></i></h4>
-				<h3>i2i Athlete</h3>
-				<p class="training-content">Are you trying to increase your lateral speed, vertical jump , or anything sports related? i2i Athlete focuses on sports related training, conditioning and skills work to get you ready for the upcoming season.</p>
-			</div>
+
 		</div>
 	</div>
 </section>
 
 <!-- <section class="homepage-fourth">
 	<div class="container">
-		
+
 	</div>
 </section> -->
 

@@ -288,7 +288,7 @@ section {
 
     .carousel-caption {
       height: 100%;
-      
+
       h3 {
         color: $red;
         font-size: 3em;
@@ -352,7 +352,6 @@ section {
 }
 
 .homepage-third {
-  min-height: 300px;
   padding-top: 30px;
   background-color: $black;
 
@@ -368,18 +367,23 @@ section {
 
   .video {
     margin-top: 2%;
-    position: relative;
-    padding-top: 55px;
-    padding-bottom: 40%; /* 16:9 */
-    height: 0;
+    text-align: center;
+    margin-bottom: 4%;
 
-    iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+    .videoWrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      padding-top: 25px;
+      height: 0;
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+      }
     }
   }
 
@@ -567,7 +571,7 @@ section {
   }
 }
 .pagination > li > a {
-  color: $red; 
+  color: $red;
 
   &:hover {
     color: $red;
@@ -647,7 +651,7 @@ footer {
         margin-top: 10px;
         color: #626262;
       }
-      
+
       #contact_name, #contact_email {
         @extend %form-fields;
         height: 38px;
@@ -704,7 +708,7 @@ footer {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;  
+  background-size: cover;
   min-height: 600px;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -769,7 +773,7 @@ footer {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;  
+  background-size: cover;
   min-height: 750px;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -847,7 +851,7 @@ footer {
     padding: 20px;
     border-top: 3px solid $red;
     background-color: #f8f8f8;
-    
+
     .share-post {
       padding-bottom:10px;
       text-align: center;
@@ -942,10 +946,10 @@ footer {
   .individual-services-header {
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Noto Sans', sans-serif;    
+    font-family: 'Noto Sans', sans-serif;
     margin-bottom: 0px;
   }
-  
+
   .service-header {
     font-size: 16px;
     font-weight: bold;
@@ -970,7 +974,7 @@ footer {
       }
     }
   }
-  
+
   .service-img {
     height: 190px;
     margin-top: 2%;
@@ -1023,7 +1027,7 @@ footer {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;  
+  background-size: cover;
   min-height: 750px;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1078,7 +1082,7 @@ footer {
   .testimonials-header {
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Noto Sans', sans-serif;    
+    font-family: 'Noto Sans', sans-serif;
     margin-bottom: 0px;
   }
 
@@ -1097,7 +1101,7 @@ footer {
     .testimonial-background {
       -webkit-box-shadow: 0px 0px 14px 3px rgba(56, 67, 67, 0.2);
       -moz-box-shadow: 0px 0px 14px 3px rgba(56, 67, 67, 0.2);
-      box-shadow: 0px 0px 14px 3px rgba(56, 67, 67, 0.2);      
+      box-shadow: 0px 0px 14px 3px rgba(56, 67, 67, 0.2);
       height: 106px;
       width: 106px;
       border-radius: 50%;
