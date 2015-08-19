@@ -56,6 +56,25 @@ img {
       color: white;
     }
   }
+
+  #instaLink {
+    margin-top: 1.1em;
+    margin-left: 1em;
+
+    a {
+      padding: 0px;
+
+      &:hover {
+        background-color: transparent;
+        color: white;
+      }
+    }
+
+    img {
+      max-height: 30px;
+    }
+  }
+
   .nav-logo {
     height: 70px;
     width: 70px;
@@ -256,65 +275,34 @@ section {
     padding-bottom: 80px;
   }
 
-  .join-me {
-    margin-top: 5%;
-    font-size: 40px;
-    text-transform: uppercase;
+  .homepage-third-header {
+    @extend %header-text;
     color: white;
-    font-weight: 800;
-    letter-spacing: 3px;
-    font-family: 'Raleway', sans-serif;
+    line-height: 46px;
   }
 
-  .about {
+  .blog-post-title {
+    text-align: center;
 
-    .about-content {
-      font-size: 18px;
-      line-height: 24px;
-      padding-top: 30px;
+    a {
       color: white;
     }
-
-    .decorative-line {
-      @extend %decorative-line;
-    }
   }
 
-  .carousel {
-    margin-top: 5%;
-    .carousel-image {
-      min-width: 100%;
-    }
-
-    .carousel-caption {
-      height: 100%;
-
-      h3 {
-        color: $red;
-        font-size: 3em;
-        padding: 0px 10px 10px 10px;
-        margin-top: 5px;
-        // background-color: rgba(0, 0, 0, 0.50);
-      }
-
-      p {
-        bottom: 15px;
-        font-size: 1.2em;
-        position: absolute;
-      }
-    }
+  .blog-post-created {
+    color: lighten($black, 50%);
+    text-align: center;
   }
 
-  .fa-chevron-right, .fa-chevron-left {
-    position: absolute;
-    top: 50%;
-    z-index: 5;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin-top: -15px;
-    font-size: 30px;
-    margin-left: -15px;
+  .blog-post-content {
+    color: white;
+    text-align: center;
+  }
+
+  .by-david {
+    color: white;
+    margin-top: 10px;
+    text-align: center;
   }
 }
 
@@ -428,28 +416,65 @@ section {
     }
   }
 
-  .blog-post-title {
-    text-align: center;
+  .join-me {
+    margin-top: 5%;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-family: 'Raleway', sans-serif;
+  }
 
-    a {
+  .about {
+
+    .about-content {
+      font-size: 18px;
+      line-height: 24px;
+      padding-top: 30px;
       color: white;
+    }
+
+    .decorative-line {
+      @extend %decorative-line;
     }
   }
 
-  .blog-post-created {
-    color: lighten($black, 50%);
-    text-align: center;
+  .carousel {
+    margin-top: 5%;
+    .carousel-image {
+      min-width: 100%;
+    }
+
+    .carousel-caption {
+      height: 100%;
+
+      h3 {
+        color: $red;
+        font-size: 3em;
+        padding: 0px 10px 10px 10px;
+        margin-top: 5px;
+        // background-color: rgba(0, 0, 0, 0.50);
+      }
+
+      p {
+        bottom: 15px;
+        font-size: 1.2em;
+        position: absolute;
+      }
+    }
   }
 
-  .blog-post-content {
-    color: white;
-    text-align: center;
-  }
-
-  .by-david {
-    color: white;
-    margin-top: 10px;
-    text-align: center;
+  .fa-chevron-right, .fa-chevron-left {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    font-size: 30px;
+    margin-left: -15px;
   }
 }
 

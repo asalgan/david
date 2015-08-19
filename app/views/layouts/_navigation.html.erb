@@ -21,6 +21,7 @@
         <% if user_signed_in? %>
           <li><%= link_to 'Logout', destroy_user_session_path, :method=>'delete'%></li>
         <% end %>
+        <li id="instaLink"><a href="https://instagram.com/i2ifitness/" class="insta"><%= image_tag('social_instagram.png') %></a></li>
       </ul>
     </div>
   </div>

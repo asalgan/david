@@ -11,56 +11,19 @@
 
 <section class="homepage-second">
 	<div class="container">
-		<div class="col-md-6">
 
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			  <!-- Indicators -->
-			  <ol class="carousel-indicators">
-			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-			  </ol>
-
-			  <!-- Wrapper for slides -->
-			  <div class="carousel-inner">
-			    <div class="item active">
-			      <img src="/assets/slideshow1.jpg" alt="" class="carousel-image">
-			      <div class="carousel-caption">
-			      	<!-- <h3>Commitment</h3> -->
-			      	<p>With anything in life, in order to achieve you must put work in. With my programs and advice I guarantee you results if you guarantee 100% commitment.</p>
-			      </div>
-			    </div>
-			    <div class="item">
-			      <img src="/assets/slideshow2.jpg" alt="" class="carousel-image">
-			      <div class="carousel-caption">
-			      	<!-- <h3>Determination</h3> -->
-			      	<p>With the motivation from i2i you will have no choice but to be determined and inspired to reach your goals</p>
-			      </div>
-			    </div>
-			    <div class="item">
-			      <img src="/assets/slideshow3.jpg" alt="" class="carousel-image">
-			      <div class="carousel-caption">
-			      	<!-- <h3>Challenging</h3> -->
-			      	<p>No one said this would be easy.. but it will be fun , exciting and life changing</p>
-			      </div>
-			    </div>
-			  </div>
-
-			  <!-- Controls -->
-			  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-			    <i class="fa fa-chevron-left"></i>
-			  </a>
-			  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-			    <i class="fa fa-chevron-right"></i>
-			  </a>
+		<h2 class="homepage-third-header">Latest blog posts</h2>
+		<img src="/assets/divider_1.png" alt="">
+		<% @blog_post_previews.reverse.each do |blog_post| %>
+			<div class="col-md-4">
+				<h4 class="blog-post-title"><%= link_to "#{blog_post.title}", blog_path(:id => blog_post.id) %></h4>
+				<p class="blog-post-created">Posted <%= time_ago_in_words(blog_post.created_at) %> ago</p>
+				<p class="blog-post-content"><%= truncate(strip_tags(blog_post.content), length: 105, separator: ' ') %></p>
+				<p class="by-david">By: David Kushnir</p>
 			</div>
-		</div>
-		<div class="about col-md-6">
-			<h4 class="join-me">Join me and the <span class="lowercase green">i2i</span> community through this <span class="green">journey</span></h4>
-			<span class="decorative-line"></span>
-			<p class="about-content">I created i2i for more than your traditional personal training business. I want others to acquire knowledge of living a healthy lifestyle to further inspire others through their daily action.</p>
-			<p class="about-content">Begin your  mind and body transformation now , and I promise you wont look back!</p>
-		</div>
+		<% end %>
+
+
 	</div>
 </section>
 
@@ -90,16 +53,58 @@
 
 			<div class="col-md-10 col-md-offset-1">
 
-				<h2 class="homepage-third-header">Latest blog posts</h2>
-				<img src="/assets/divider_1.png" alt="">
-				<% @blog_post_previews.reverse.each do |blog_post| %>
-					<div class="col-md-4">
-						<h4 class="blog-post-title"><%= link_to "#{blog_post.title}", blog_path(:id => blog_post.id) %></h4>
-						<p class="blog-post-created">Posted <%= time_ago_in_words(blog_post.created_at) %> ago</p>
-						<p class="blog-post-content"><%= truncate(strip_tags(blog_post.content), length: 105, separator: ' ') %></p>
-						<p class="by-david">By: David Kushnir</p>
+				<div class="col-md-6">
+
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					  </ol>
+
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner">
+					    <div class="item active">
+					      <img src="/assets/slideshow1.jpg" alt="" class="carousel-image">
+					      <div class="carousel-caption">
+					      	<!-- <h3>Commitment</h3> -->
+					      	<p>With anything in life, in order to achieve you must put work in. With my programs and advice I guarantee you results if you guarantee 100% commitment.</p>
+					      </div>
+					    </div>
+					    <div class="item">
+					      <img src="/assets/slideshow2.jpg" alt="" class="carousel-image">
+					      <div class="carousel-caption">
+					      	<!-- <h3>Determination</h3> -->
+					      	<p>With the motivation from i2i you will have no choice but to be determined and inspired to reach your goals</p>
+					      </div>
+					    </div>
+					    <div class="item">
+					      <img src="/assets/slideshow3.jpg" alt="" class="carousel-image">
+					      <div class="carousel-caption">
+					      	<!-- <h3>Challenging</h3> -->
+					      	<p>No one said this would be easy.. but it will be fun , exciting and life changing</p>
+					      </div>
+					    </div>
+					  </div>
+
+					  <!-- Controls -->
+					  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					    <i class="fa fa-chevron-left"></i>
+					  </a>
+					  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					    <i class="fa fa-chevron-right"></i>
+					  </a>
 					</div>
-				<% end %>
+				</div>
+				<div class="about col-md-6">
+					<h4 class="join-me">Join me and the <span class="lowercase green">i2i</span> community through this <span class="green">journey</span></h4>
+					<span class="decorative-line"></span>
+					<p class="about-content">I created i2i for more than your traditional personal training business. I want others to acquire knowledge of living a healthy lifestyle to further inspire others through their daily action.</p>
+					<p class="about-content">Begin your  mind and body transformation now , and I promise you wont look back!</p>
+				</div>
+
+
 				<div class="classes col-md-12">
 					<div class="col-md-3">
 						<h4 class="icon"><i class="fa fa-comments"></i></h4>
