@@ -13,6 +13,10 @@
       <% end %>
     </div>
 
+    <center class="col-md-6 col-md-offset-3">
+      <p><strong>Nominate someone Inspirational:</strong> Do you have a inspirational story we can appreciate? Want to nominate someone you know? Or do you have a question for one of our inspirational individuals? <%= link_to "Let us know", new_contact_path %></p>
+    </center>
+
     <div class="col-md-9 col-md-offset-1">
       <% @blog_posts.order("created_at DESC").each do |blog_post| %>
         <div class="blog-article">
