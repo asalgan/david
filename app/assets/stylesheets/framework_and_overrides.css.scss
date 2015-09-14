@@ -230,7 +230,7 @@ section {
   width: 70px;
 }
 .homepage-main {
-  background-image: url('/assets/david_large.jpg');
+  background-image: url(asset-path('david_large.jpg'));
   min-height: 450px;
   padding-bottom: 50px;
   background-attachment: fixed;
@@ -257,8 +257,9 @@ section {
   }
 
   .start-now {
+
     .start-now-button {
-      float: right;
+      text-align: center;
       margin-top: 5%;
       @extend %red-button;
     }
@@ -307,7 +308,7 @@ section {
 }
 
 .homepage-image {
-  background-image: url('/assets/quote_image.jpg');
+  background-image:  url(asset-path('quote_image.jpg'));
   min-height: 400px;
   position: relative;
   background-attachment: fixed;
@@ -740,7 +741,7 @@ footer {
 }
 
 .about-page-top {
-  background-image: url('/assets/david_pushup.jpg');
+  background-image: url(asset-path('david_pushup.jpg'));
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -758,7 +759,7 @@ footer {
     -webkit-font-smoothing: antialiased;
 
     .about {
-      font-size: 56px;
+      font-size: 2em;
       display: block;
       color: $red;
       font-family: 'Noto Sans', sans-serif;
@@ -769,7 +770,7 @@ footer {
     }
 
     .david {
-      font-size: 140px;
+      font-size: 3.5em;
       display: block;
       font-weight: 900;
       letter-spacing: 10px;
@@ -805,7 +806,7 @@ footer {
 }
 
 .about-page-image {
-  background-image: url('/assets/quote_photo.jpg');
+  background-image: url(asset-path('quote_photo.jpg'));
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1060,7 +1061,7 @@ footer {
 }
 
 .services-page-image {
-  background-image: url('/assets/quote_image2.jpg');
+  background-image: url(asset-path('quote_image2.jpg'));
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
