@@ -13,7 +13,7 @@
 	<div class="container">
 
 		<h2 class="homepage-third-header">Latest blog posts</h2>
-		<img src="/assets/divider_1.png" alt="">
+		<%= image_tag "divider_1.png" %>
 		<% @blog_post_previews.reverse.each do |blog_post| %>
 			<div class="col-md-4">
 				<h4 class="blog-post-title"><%= link_to "#{blog_post.title}", blog_path(:id => blog_post.id) %></h4>
@@ -66,21 +66,21 @@
 					  <!-- Wrapper for slides -->
 					  <div class="carousel-inner">
 					    <div class="item active">
-					      <img src="/assets/slideshow1.jpg" alt="" class="carousel-image">
+					    	<%= image_tag "slideshow1.jpg", class: "carousel-image" %>
 					      <div class="carousel-caption">
 					      	<!-- <h3>Commitment</h3> -->
 					      	<p>With anything in life, in order to achieve you must put work in. With my programs and advice I guarantee you results if you guarantee 100% commitment.</p>
 					      </div>
 					    </div>
 					    <div class="item">
-					      <img src="/assets/slideshow2.jpg" alt="" class="carousel-image">
+					    	<%= image_tag "slideshow2.jpg", class: "carousel-image" %>
 					      <div class="carousel-caption">
 					      	<!-- <h3>Determination</h3> -->
 					      	<p>With the motivation from i2i you will have no choice but to be determined and inspired to reach your goals</p>
 					      </div>
 					    </div>
 					    <div class="item">
-					      <img src="/assets/slideshow3.jpg" alt="" class="carousel-image">
+					    	<%= image_tag "slideshow3.jpg", class: "carousel-image" %>
 					      <div class="carousel-caption">
 					      	<!-- <h3>Challenging</h3> -->
 					      	<p>No one said this would be easy.. but it will be fun , exciting and life changing</p>
@@ -133,10 +133,3 @@
 		</div>
 	</div>
 </section>
-
-<!-- <section class="homepage-fourth">
-	<div class="container">
-
-	</div>
-</section> -->
-

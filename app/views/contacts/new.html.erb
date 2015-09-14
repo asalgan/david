@@ -9,7 +9,7 @@
 			  <%= f.input :email, required: true %>
 			  <%= f.input :message, :as => :text, required: true %>
 			  <%= f.input :reason, :label => "Reason for contact", :collection => ["General question", "Training", "Blog suggestions/post"], required: true %>
-			  
+
 			  <div class= "hidden">
 			    <%= f.input :nickname, :hint => 'Leave this field blank!' %>
 			  </div>
@@ -23,7 +23,7 @@
 			<h4 class="col-md-12">193 Northfield Road, Northfield, IL 60093</h4>
 		</div>
 		<div class="contact-img col-md-6">
-			<img src="/assets/david_pointing.jpg">
+			<%= image_tag "david_pointing.jpg" %>
 		</div>
 	</div>
 </section>

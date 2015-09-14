@@ -14,7 +14,7 @@
 			</ul>
 			<%= link_to 'Get started  &#8594;'.html_safe, new_contact_path, :class => "start-now-button" %>
 		</div>
-		<div class="col-md-6"><img src="/assets/david_cartoon.jpg" alt="" class="david-cartoon-img"></div>
+		<div class="col-md-6"><%= image_tag "david_cartoon.jpg", class: "david-cartoon-img" %></div>
 	</div>
 </section>
 
@@ -22,11 +22,10 @@
 <section class="individual-services">
 	<div class="container">
 		<h3 class="individual-services-header">Services we're offering</h3>
-		<img src="/assets/divider_1.png" alt="">
-
+		<%= image_tag "divider_1.png" %>
 		<div class="col-md-3">
 			<div class="col-md-12">
-				<img src="/assets/img1.jpg" alt="" class="service-img">
+				<%= image_tag "img1.jpg", class: "service-img" %>
 			</div>
 			<h3 class="service-header">1 on 1 Training</h3>
 			<ul>
@@ -39,7 +38,7 @@
 
 		<div class="col-md-3">
 			<div class="col-md-12">
-				<img src="/assets/img2.jpg" alt="" class="service-img">
+				<%= image_tag "img2.jpg", class: "service-img" %>
 			</div>
 			<h3 class="service-header">Online Personal Training</h3>
 			<ul>
@@ -52,7 +51,7 @@
 
 		<div class="col-md-3">
 			<div class="col-md-12">
-				<img src="/assets/img4.png" alt="" class="service-img">
+				<%= image_tag "img4.png", class: "service-img" %>
 			</div>
 			<h3 class="service-header">Diet/Nutrition</h3>
 			<ul>
@@ -65,7 +64,7 @@
 
 		<div class="col-md-3">
 			<div class="col-md-12">
-				<img src="/assets/img3.jpg" alt="" class="service-img">
+				<%= image_tag "img3.jpg", class: "service-img" %>
 			</div>
 			<h3 class="service-header">i2i Athlete</h3>
 			<ul>
@@ -95,11 +94,11 @@
 <section class="testimonials">
 	<div class="container">
 		<h3 class="testimonials-header">Check out what the i2i community has said about us</h3>
-		<img src="/assets/divider_1.png" alt="">
+		<%= image_tag "divider_1.png" %>
 
 		<div class="testimonial col-md-6 col-md-offset-2">
 			<div class="testimonial-background left">
-				<img src="/assets/testimonial1.jpg" alt="" class="testimonial-img">
+				<%= image_tag "testimonial1.jpg", class: "testimonial-img" %>
 			</div>
 			<div class="bubble bubble-left">
 				<p class="testimonial-content">"Whenever I had a question about my meal plan or workout David was there via email or phone to answer my question right away"</p>
@@ -108,7 +107,7 @@
 
 		<div class="testimonial col-md-6 col-md-offset-4">
 			<div class="testimonial-background right">
-				<img src="/assets/testimonial2.jpg" alt="" class="testimonial-img">
+				<%= image_tag "testimonial2.jpg", class: "testimonial-img" %>
 			</div>
 			<div class="bubble bubble-right">
 				<p class="testimonial-content">"i2i has given me more results in 30 days then I have seen in 3 years of working out."</p>
@@ -117,7 +116,7 @@
 
 		<div class="testimonial col-md-6 col-md-offset-2">
 			<div class="testimonial-background left">
-				<img src="/assets/testimonial3.jpg" alt="" class="testimonial-img">
+				<%= image_tag "testimonial3.jpg", class: "testimonial-img" %>
 			</div>
 			<div class="bubble bubble-left">
 				<p class="testimonial-content">"i2i changed the way I look at eating. Best investment I have made in awhile"</p>
