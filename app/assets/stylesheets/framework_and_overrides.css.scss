@@ -229,17 +229,20 @@ section {
   position: relative;
   width: 70px;
 }
+
+%background-cover {
+  -webkit-background-size: cover !important;
+  -moz-background-size:  cover !important;
+  -o-background-size:  cover !important;
+  background-size:  cover !important;
+}
+
 .homepage-main {
-  background-image: url(asset-path('david_large.jpg'));
+  background: url(asset-path('david_large.jpg')) no-repeat center 10% fixed;
   min-height: 450px;
   padding-bottom: 50px;
-  background-attachment: fixed;
   margin-top: 0px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
+  @extend %background-cover;
 
   .headers {
     font-family: 'Lato', sans-serif;
@@ -308,16 +311,11 @@ section {
 }
 
 .homepage-image {
-  background-image:  url(asset-path('quote_image.jpg'));
+  background:  url(asset-path('quote_image.jpg')) no-repeat center 20% fixed;
   min-height: 400px;
   position: relative;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  @extend %background-cover;
   left: 0;
-  background-repeat: no-repeat;
   padding: 0;
 
   blockquote {
@@ -741,26 +739,20 @@ footer {
 }
 
 .about-page-top {
-  background-image: url(asset-path('david_pushup.jpg'));
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url(asset-path('david_pushup.jpg')) no-repeat center 10% fixed;
+  @extend %background-cover;
   min-height: 600px;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
 
   .about-page-header {
-    font-weight: 600;
-    color: white;
     margin-top: 120px;
     text-transform: uppercase;
     letter-spacing: -1px;
     -webkit-font-smoothing: antialiased;
 
     .about {
-      font-size: 2em;
+      font-size: 6em;
       display: block;
+      font-weight: 600;
       color: $red;
       font-family: 'Noto Sans', sans-serif;
       font-weight: 100;
@@ -770,14 +762,35 @@ footer {
     }
 
     .david {
-      font-size: 3.5em;
+      font-size: 11em;
+      color: white;
       display: block;
       font-weight: 900;
       letter-spacing: 10px;
-      padding-left: 20px;
+      padding-left: 0.2em;
       border-left: 5px solid $red;
       font-family: 'Lato', sans-serif;
       text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.50);
+    }
+
+    @media (min-width: 500px) and (max-width: 600px) {
+      .about { font-size: 5em; }
+      .david { font-size: 9em; }
+    }
+
+    @media (min-width: 450px) and (max-width: 499px) {
+      .about { font-size: 4em; }
+      .david { font-size: 8em; }
+    }
+
+    @media (min-width: 420px) and (max-width: 449px) {
+      .about { font-size: 3em; }
+      .david { font-size: 6em; }
+    }
+
+    @media (min-width: 1px) and (max-width: 419px) {
+      .about { font-size: 2.5em; }
+      .david { font-size: 4.5em; }
     }
   }
 }
@@ -806,14 +819,9 @@ footer {
 }
 
 .about-page-image {
-  background-image: url(asset-path('quote_photo.jpg'));
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url(asset-path('quote_photo.jpg')) no-repeat center center fixed;
+  @extend %background-cover;
   min-height: 750px;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
 
   .about-page-quote {
     margin-top: 25%;
@@ -1061,14 +1069,9 @@ footer {
 }
 
 .services-page-image {
-  background-image: url(asset-path('quote_image2.jpg'));
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url(asset-path('quote_image2.jpg')) no-repeat center center fixed;
+  @extend %background-cover;
   min-height: 750px;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
 
   .services-page-quote {
     margin-top: 12%;
