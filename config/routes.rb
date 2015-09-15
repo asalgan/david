@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  mount RedactorRails::Engine => '/redactor_rails'
   root to: 'visitors#index'
 
   devise_for :users, :skip => [:registrations, :passwords]
@@ -16,5 +15,7 @@ Rails.application.routes.draw do
 	get "/services" => "pages#services", :as => :services
 
 	get '/robots.txt' => 'home#robots'
+
+  mount RedactorRails::Engine => '/redactor_rails'
 
 end
