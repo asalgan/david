@@ -17,9 +17,7 @@
 //= require bootstrap-sprockets
 //= require_tree .
 
-$(document).ready(function() { 
-
-  $('.prettySocial').prettySocial();
+$(document).ready(function() {
 
   $('.contact-submit').click(function () {
     var $this = $(this);
