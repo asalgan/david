@@ -644,22 +644,13 @@ footer {
   }
 }
 
-.redactor_editor {
-  height: 300px;
+.redactor-editor {
+  min-height: 300px;
 }
 
-.redactor_toolbar {
+.redactor-toolbar {
   background: #fafafa;
   border-bottom: 1px solid #ddd;
-}
-
-#redactor_modal {
-  border-radius: 0px;
-  #redactor_modal_inner {
-    footer {
-      background-color: #f5f5f5;
-    }
-  }
 }
 
 .contact-page-top {

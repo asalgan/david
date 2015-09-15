@@ -17,7 +17,7 @@ gem 'simple_form'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails', '4.0.3.1'
 gem 'will_paginate-bootstrap'
-gem 'redactor-rails'
+gem 'redactor-rails', '0.5.0'
 gem "carrierwave"
 gem "mini_magick"
 gem "mail_form", ">= 1.3.0"
