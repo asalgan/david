@@ -237,14 +237,14 @@ section {
   background-size:  cover !important;
   min-width: 100%;
   min-height: 100%;
+  background-repeat: no-repeat;
 }
 
 .homepage-main {
-  background: url(asset-path('david_large.jpg')) no-repeat center 10%;
+  background: url(asset-path('david_large.jpg')) center 10%;
   min-height: 450px;
   padding-bottom: 50px;
   margin-top: 0px;
-  background-attachment: fixed;
   @extend %background-cover;
 
   .headers {
@@ -275,7 +275,6 @@ section {
 .homepage-second {
   min-height: 300px;
   background-color: $black;
-
 
   .container {
     margin-top: 40px;
@@ -314,11 +313,10 @@ section {
 }
 
 .homepage-image {
-  background:  url(asset-path('quote_image.jpg')) no-repeat center 20%;
+  background:  url(asset-path('quote_image.jpg')) center 20%;
   min-height: 400px;
   position: relative;
   @extend %background-cover;
-  background-attachment: fixed;
   left: 0;
   padding: 0;
 
@@ -743,9 +741,8 @@ footer {
 }
 
 .about-page-top {
-  background: url(asset-path('david_pushup.jpg')) no-repeat center 10%;
+  background: url(asset-path('david_pushup.jpg')) center 10%;
   @extend %background-cover;
-  background-attachment: fixed;
   min-height: 600px;
 
   .about-page-header {
@@ -824,9 +821,8 @@ footer {
 }
 
 .about-page-image {
-  background: url(asset-path('quote_photo.jpg')) no-repeat center 10%;
+  background: url(asset-path('quote_photo.jpg')) center 10%;
   @extend %background-cover;
-  background-attachment: fixed;
   min-height: 750px;
 
   .about-page-quote {
@@ -1075,9 +1071,8 @@ footer {
 }
 
 .services-page-image {
-  background: url(asset-path('quote_image2.jpg')) no-repeat center center;
+  background: url(asset-path('quote_image2.jpg')) center center;
   @extend %background-cover;
-  background-attachment: fixed;
   min-height: 750px;
 
   .services-page-quote {
