@@ -13,10 +13,10 @@
 	<div class="blog-post-content col-md-9">
 		<%= @blog.content.html_safe %>
 	</div>
-	<div class="social-share col-md-2 col-md-offset-1">
+	<center class="social-share col-md-2 col-md-offset-1">
 		<p class="share-post">Share this post</p>
-		<div class="addthis_sharing_toolbox"></div>
-	</div>
+		<a href="#" class="share-post-button" data-id="<%= @blog.id %>"><i class="fa fa-fw fa-share"></i></a>
+	</center>
 	<div class="other-blog-posts col-md-2">
 		<p class="header">Recent blog posts</p>
 		<% @other_posts.each do |post| %>
@@ -25,4 +25,42 @@
 	</div>
 </div>
 
-<script src="http://s7.addthis.com/js/300/addthis_widget.js" type="text/javascript"></script>
+<script>
+
+	new Share(".share-post-button", {
+	  "url": 				 "http://www.i2ifitness.com/blogs/<%= @blog.id %>",
+	  "title":       "<%= @blog.title %>",
+	  "description": "<%= truncate(@blog.content, length: 50, separator: ' ')  %>",
+	  "ui": {
+	  	"flyout":"bottom center",
+	  	"button_font": false,
+	    "buttonText": ""
+	  },
+	  "networks": {
+	  	"email": {
+	  		"description":"<%= truncate(@blog.content, length: 50, separator: ' ')  %>. Read the full post at http://www.i2ifitness.com/blogs/<%= @blog.id %>."
+	  	},
+		  "twitter": {
+		  	"url": "http://www.i2ifitness.com/blogs/<%= @blog.id %>",
+	      "description": "<%= truncate(@blog.content, length: 50, separator: ' ')  %>"
+	    },
+	    "facebook": {
+	      "title": "<%= @blog.title %>",
+	      "url": "http://www.i2ifitness.com/blogs/<%= @blog.id %>",
+	      "description": "<%= truncate(@blog.content, length: 50, separator: ' ')  %>"
+	    },
+	    "reddit": {
+	      "title": "<%= @blog.title %>"
+	    },
+	    "linkedin": {
+	      "title": "<%= @blog.title %>",
+	      "url": "http://www.i2ifitness.com/blogs/<%= @blog.id %>",
+	      "description": "<%= truncate(@blog.content, length: 50, separator: ' ')  %>"
+	    },
+	    "pinterest": {
+	    	"enabled": false
+	    }
+	  }
+	});
+
+</script>
