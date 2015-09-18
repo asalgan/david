@@ -1,6 +1,13 @@
 class BlogsController < ApplicationController
   before_filter :is_admin?, only: [:new, :create, :destroy]
 
+  # used for sanitization user's input
+  REDACTOR_TAGS = %w(code span div label a br p b i del strike u img video audio
+                  iframe object embed param blockquote mark cite small ul ol li
+                  hr dl dt dd sup sub big pre code figure figcaption strong em
+                  table tr td th tbody thead tfoot h1 h2 h3 h4 h5 h6)
+  REDACTOR_ATTRIBUTES = %w(href)
+
   def index
     @blog_posts = Blog.all.paginate(:page => params[:page], :per_page => 6)
   end
@@ -23,11 +30,12 @@ class BlogsController < ApplicationController
     @blog_post.update(blog_params)
 
     if @blog_post.save
-      redirect_to blogs_url, notice: "Your edits were successfully saved!" 
+      redirect_to blogs_url, notice: "Your edits were successfully saved!"
     end
   end
 
   def create
+    params[:content] = sanitize_redactor(params[:content])
     @blog_post = Blog.new(blog_params)
 
     respond_to do |format|
@@ -46,6 +54,15 @@ class BlogsController < ApplicationController
 
     def blog_params
       params.require(:blog).permit(:content, :date, :title)
+    end
+
+    def sanitize_redactor(orig_text)
+      stripped = view_context.strip_tags(orig_text)
+      if stripped.present? # this prevents from creating empty comments
+        view_context.sanitize(orig_text, tags: REDACTOR_TAGS, attributes: REDACTOR_ATTRIBUTES)
+      else
+        nil
+      end
     end
 
 end
